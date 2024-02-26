@@ -1,0 +1,61 @@
+body {
+    color: #252222;
+    background-color: rgb(255, 255, 255);
+    font-family: 'roboto', sans-serif;
+  }
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6,
+  p {
+    margin: 0;
+  }
+  img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+  }
+  ul {
+    list-style: none;
+    margin: 0;
+  padding: 0;
+  }
+  a {
+    text-decoration: none;
+  }
+
+  /* .ww{
+    font-family: "Montserrat", sans-serif;
+  } */
+
+  .ee{
+    padding: 20px;
+    background-color: #252222;
+    border: 2px solid #f36421;
+    display: inline-block;
+    position: absolute;
+    left: 185px;
+    top: 70px;
+  }
+  .tt{
+    position: relative;
+  }
+
+  .uu{
+    max-width: 1600px;
+  max-height: 600px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 50px;
+  padding-bottom: 750px;
+background-image: url(../images/1590125748_05-laptop-for-coding.jpg);
+background-position: center;
+  background-repeat: repeat, no-repeat;
+  background-size: cover;
+  }
+
+  .hh{
+    text-align: center;
+  }
