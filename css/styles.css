@@ -1,6 +1,7 @@
 body {
     color: #252222;
     background-color: rgb(255, 255, 255);
+    /* background-color: rgb(68 68 68) */
     font-family: 'roboto', sans-serif;
   }
   h1,
@@ -30,32 +31,45 @@ body {
     font-family: "Montserrat", sans-serif;
   } */
 
-  .ee{
-    padding: 20px;
-    background-color: #252222;
-    border: 2px solid #f36421;
-    display: inline-block;
-    position: absolute;
-    left: 185px;
-    top: 70px;
-  }
-  .tt{
-    position: relative;
-  }
+  
+ 
 
-  .uu{
+  .hero-section{
     max-width: 1600px;
   max-height: 600px;
   margin-left: auto;
   margin-right: auto;
   padding-top: 50px;
   padding-bottom: 750px;
-background-image: url(../images/1590125748_05-laptop-for-coding.jpg);
+  
+background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/1590125748_05-laptop-for-coding.jpg);
 background-position: center;
   background-repeat: repeat, no-repeat;
   background-size: cover;
   }
 
-  .hh{
+  .hero-section__container{
+    position: relative;
+    
+  }
+
+  .hero-section__h1{
     text-align: center;
+    font-size: 48px;
+    color: #af4e0a;
+  }
+
+  .hero-section__p{
+    text-align: center;
+    
+  }
+
+  .hero-section__divforimg{
+    padding: 20px;
+    background-color: #252222;
+    border: 2px solid #f36421;
+    display: inline-block;
+    position: absolute;
+    left: 75px;
+    top: 85px;
   }
