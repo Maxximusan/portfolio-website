@@ -569,12 +569,16 @@ video {
   display: inline-block;
 }
 
-.max-h-\[900px\] {
-  max-height: 900px;
+.max-h-\[800px\] {
+  max-height: 800px;
 }
 
 .max-w-screen-2xl {
   max-width: 1536px;
+}
+
+.grow {
+  flex-grow: 1;
 }
 
 .border-2 {
@@ -590,13 +594,18 @@ video {
   border-color: rgb(243 100 33 / var(--tw-border-opacity));
 }
 
+.bg-bgrHead {
+  background-color: #87775bde;
+}
+
 .bg-bgrImg {
   --tw-bg-opacity: 1;
   background-color: rgb(37 34 34 / var(--tw-bg-opacity));
 }
 
-.bg-bgrHead {
-  background-color: #87775bde;
+.bg-bgrBody {
+  --tw-bg-opacity: 1;
+  background-color: rgb(197 197 197 / var(--tw-bg-opacity));
 }
 
 .bg-hero-pattern {

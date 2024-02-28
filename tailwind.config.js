@@ -12,6 +12,7 @@ module.exports = {
         bgrImg: '#252222',
         border: '#f36421',
         bgrHead: '#87775bde',
+        bgrBody: '#c5c5c5',
       },
     },
   },

@@ -3,16 +3,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My portfolio website</title>
+    <title>TEMPORARILY</title>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     <link rel="icon" href="/images/favicon.ico" />
-    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/styles.css" />
 </head>
 <body>
-    <header class=" bg-bgrHead">
+    <header>
         <nav>
-            <div>
-                <a href="./temporarily.html">go to CSS</a>
+            <div class="temporarilyNAV">
+                <a class="TNavFont" href="index.html">go to TAILWIND</a>
             <ul>
                 <li><a href="#about">about</a></li>
                 <li><a href="#portfolio">portfolio</a></li>
@@ -22,16 +22,20 @@
         </nav>
     </header>
 
-    <main class="bg-bgrBody">
-        <section class="mx-auto pt-12 pb-[750px] max-w-screen-2xl max-h-[800px]  bg-hero-pattern bg-cover bg-no-repeat bg-center">
-            <div class="relative">
-                <h1 class="text-h1 text-5xl text-center font-bold"> Maksym Chuikov </h1>
-                <p class="text-center"> Hi there! I'm a Maksim Chuikov, front end developer based on Kharkov. I'm looking for my first job.</p>
-                <div class="p-5 bg-bgrImg inline-block absolute left-24 top-20 border-2 border-solid border-border">
-                  <img src="./images/IMG_8180.jpg" alt="My photo" width="300px"/>
+    <main>
+        <section class="hero-section">
+            <div class="hero-section__container">
+                <h1 class="hero-section__h1"> Maksym Chuikov </h1>
+                <p class="hero-section__p"> Hi there! I'm a Maksim Chuikov, front end developer based on Kharkov. I'm looking for my first job.</p>
+                <div class="forPedestal">
+                    <div class="pedestal"></div>
+                     <div class="hero-section__divforimg">
+                        
+                          <img src="./images/IMG_8180.jpg" alt="My photo" width="300px"/>
+                     </div>
                 </div>
             </div>
-        
+
         </section>
 
         <section id="about">
@@ -142,7 +146,7 @@
 
 
     <footer id="contacts">
-        
+
     </footer>
 </body>
 </html>
