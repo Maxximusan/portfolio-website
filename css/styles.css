@@ -85,6 +85,10 @@ background-position: center;
     font-weight: 700;
 }
 
+.navUl{
+    display: flex;
+    justify-content: space-between;
+}
   .pedestal{
     position: absolute;
     left: 150px;
