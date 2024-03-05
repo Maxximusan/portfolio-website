@@ -14,11 +14,13 @@
             <div class="temporarilyNAV">
                 <a class="TNavFont" href="index.html">go to TAILWIND</a>
           
-            <ul class="navUl">
-                <li><a href="#about">about</a></li>
-                <li><a href="#portfolio">portfolio</a></li>
-                <li><a href="#contacts">contacts</a></li>
-            </ul>
+                <div class="navBox">
+                     <ul class="navUl">
+                      <li class="nav-item "><a href="#about">about</a></li>
+                      <li class="nav-item "><a href="#portfolio">portfolio</a></li>
+                     <li class="nav-item "><a href="#contacts">contacts</a></li>
+                    </ul>
+                </div>
           </div>
         </nav>
     </header>
@@ -27,7 +29,7 @@
         <section class="hero-section">
             <div class="hero-section__container">
                 <h1 class="hero-section__h1"> Maksym Chuikov </h1>
-                <p class="hero-section__p"> Hi there! I'm a Maksim Chuikov, front end developer based on Kharkov. I'm looking for my first job.</p>
+                <!-- <p class="hero-section__p"> Hi there! I'm a Maksim Chuikov, front end developer based on Kharkov. I'm looking for my first job.</p> -->
                 <div class="forPedestal">
                     <div class="pedestal"></div>
                      <div class="hero-section__divforimg">
@@ -39,17 +41,19 @@
 
         </section>
 
-        <section id="about">
+        <section id="about"  class="about">
             
-            <div class="main-about">
-                <h2> about </h2>
-             <p>  
+            
+                <h2 class="about-title"> about </h2>
+                <div class="main-about">
+                <h3 class="ma-text"> Hi there! I'm a Maksim Chuikov, front end developer based on Kharkov. I'm looking for my first job.</h3>
+             <p class="ma-text">  
                Last year i have ended full-stack courses. 
                I have experience in realization individual and team projects, that you can see in section below.
                 Now i keep studying on my own, and progresinng in english too. 
              </p>
-             <p> FROM RESUME: I am a beginner junior front-end developer who is ready to work, get the necessary practice and experience to become a true professional. I am looking for a reliable company that values its employees in any life circumstances, ready to grow its stars for long-term cooperation. If you are such a company and I to be with you, then you will get a reliable person.</p>
-          </div>
+             <p class="ma-text"> I am ready to work, get the necessary practice and experience to become a true professional. I am looking for a reliable company that values its employees in any life circumstances, ready to grow its stars for long-term cooperation. If you are such a company and I to be with you, then you will get a reliable person.</p>
+              </div>
 
           <div class="non-require-part">
              <h3> random facts</h3>
@@ -66,37 +70,54 @@
           </div>
         </section>
 
-        <section id="portfolio">
-            <h2> Portfolio </h2>
-            <div>
-                <h3> Team projects</h3>
+        <section id="portfolio" class="portfolio">
+            <h2 class="portfolio-title"> Portfolio </h2>
+            <div class="prog-box">
+                <h3 class="progects-title"> Team projects</h3>
                 
-             <ul>
-                 <li>
-                    <h4>Ice-cream</h4>
-                    <a href="https://iamdorohin.github.io/project-22-IceCream/"> LIVE PAGE</a>
-                    <a href="https://github.com/IamDorohin/project-22-IceCream"> GITHUB</a>
-                    <p> 
+             
+             <ul class="teamProj-list">
+                 <li class="teamProj-item">
+                    <h4 class="teamProjItemTitle">Ice-cream</h4>
+                    <div class="linkTeamProjCont">
+                      <a href="https://iamdorohin.github.io/project-22-IceCream/"> LIVE PAGE</a>
+                      <a href="https://github.com/IamDorohin/project-22-IceCream"> GITHUB</a>
+                   </div>
+                   <div class="imgCont">
+                        <img src="./images/ice-cream.png" alt="one of the team projects" width="360px"/>
+                    </div>
+                    
+                    <p class="descriptionTeamItem"> 
                         Educational group project. The ice-cream company's website, with an order form, product
                         details and a map of sales outlets. The website with a responsive layout.
                         I created a section products, and animation for it.
                     </p>
                 </li>
-                 <li>
-                    <h4>Filmoteca</h4>
-                    <a href="https://trant755.github.io/Filmoteka/"> LIVE PAGE</a>
-                    <a href="https://github.com/trant755/Filmoteka"> GITHUB</a>
-                    <p>
+                 <li class="teamProj-item">
+                    <h4 class="teamProjItemTitle">Filmoteca</h4>
+                    <div class="linkTeamProjCont">
+                         <a href="https://trant755.github.io/Filmoteka/"> LIVE PAGE</a>
+                        <a href="https://github.com/trant755/Filmoteka"> GITHUB</a>
+                    </div>
+                    <div class="imgCont">
+                        <img src="./images/filmoteka.png" alt="one of the team projects" width="360px"/>
+                    </div>
+                    <p class="descriptionTeamItem">
                         Educational group project. A film search site with the ability to read information about the
                         films, watch a trailer and add films to the library.
                         I created functionality for obtaining movie data from the API, drawing their cards and drawing in a modal window. 
                     </p>
                 </li>
-                 <li>
-                    <h4>Petly Services</h4>
-                    <a href="https://iamdorohin.github.io/petly-service/">LIVE PAGE</a>
-                    <a href="https://github.com/IamDorohin/petly-service">GITHUB</a>
-                    <p>
+                 <li class="teamProj-item">
+                    <h4 class="teamProjItemTitle">Petly Services</h4>
+                    <div class="linkTeamProjCont">
+                        <a href="https://iamdorohin.github.io/petly-service/">LIVE PAGE</a>
+                        <a href="https://github.com/IamDorohin/petly-service">GITHUB</a>
+                    </div>
+                    <div class="imgCont">
+                      <img src="./images/petly.png" alt="one of the team projects" width="360px"/>
+                    </div>
+                    <p class="descriptionTeamItem">
                         Educational group project. The application of the service of announcements for the
                         adaptation of pets and related news and partners. Has a personal user profile with the
                         ability to keep a history of your pet.
@@ -104,10 +125,11 @@
                     </p>
                 </li>
               </ul>
+            
             </div>
 
-            <div>
-                <h3> Individual projects</h3>
+            <div class="prog-box">
+                <h3 class="progects-title"> Individual projects</h3>
                 
              <ul>
                  <li>

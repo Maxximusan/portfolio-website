@@ -77,18 +77,27 @@ background-position: center;
 
   .temporarilyNAV{
     display: flex;
-    justify-content: space-between;
+    
   }
 
 .TNavFont{
     font-size: 24px;
     font-weight: 700;
+    margin-right: 200px;
 }
 
 .navUl{
     display: flex;
-    justify-content: space-between;
+    
 }
+.nav-item {
+  margin-right: 50px;
+}
+
+.nav-item:last-child {
+  margin-right: 0;
+}
+
   .pedestal{
     position: absolute;
     left: 150px;
@@ -102,4 +111,75 @@ background-position: center;
     transform-origin: 50% 50% 100px;
   }
 
-  
+  .about {
+    background-color: #ffd87fb8;
+    width: 1200px;
+    padding: 20px 0;
+    margin-right: auto;
+    margin-left: auto;
+    
+  }
+
+  .about-title, .portfolio-title {
+    text-align: center;
+    font-size: 36px;
+    font-family: 'montserrat', monospace;
+    color:forestgreen;
+    margin-bottom: 10px;
+  }
+
+  .main-about{
+    text-align: center;
+    margin-bottom: 40px;
+  }
+
+  .ma-text {
+    margin-bottom: 15px;
+  }
+
+  .non-require-part{
+    text-align: center;
+  }
+
+  .portfolio{
+    background-color: #a6d3b6;
+    padding: 20px 0;
+    
+  }
+
+  .prog-box{
+    margin-bottom: 30px;
+  }
+  .progects-title{
+font-size: 24px;
+text-align: center;
+margin-bottom: 10px;
+  }
+
+  .teamProj-list{
+  display: flex;
+
+  justify-content: space-between;
+  padding: 0 20px;
+  }
+
+  .teamProj-item {
+    max-width: 400px;
+  }
+
+  .imgCont{
+    display: flex;
+    justify-content: center;
+  }
+  .linkTeamProjCont{
+    display: flex;
+    justify-content: space-evenly
+  }
+
+  .descriptionTeamItem {
+padding: 10px 20px;
+  }
+
+   .teamProjItemTitle{
+    text-align: center;
+   }
