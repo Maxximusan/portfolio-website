@@ -5,6 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>TEMPORARILY</title>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
+      integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
     <link rel="icon" href="/images/favicon.ico" />
     <link rel="stylesheet" href="./css/styles.css" />
 </head>
@@ -80,8 +87,8 @@
                  <li class="teamProj-item">
                     <h4 class="teamProjItemTitle">Ice-cream</h4>
                     <div class="linkTeamProjCont">
-                      <a href="https://iamdorohin.github.io/project-22-IceCream/"> LIVE PAGE</a>
-                      <a href="https://github.com/IamDorohin/project-22-IceCream"> GITHUB</a>
+                      <a class="teamProjLink" href="https://iamdorohin.github.io/project-22-IceCream/"> LIVE PAGE</a>
+                      <a class="teamProjLink" href="https://github.com/IamDorohin/project-22-IceCream"> GITHUB</a>
                    </div>
                    <div class="imgCont">
                         <img src="./images/ice-cream.png" alt="one of the team projects" width="360px"/>
@@ -96,8 +103,8 @@
                  <li class="teamProj-item">
                     <h4 class="teamProjItemTitle">Filmoteca</h4>
                     <div class="linkTeamProjCont">
-                         <a href="https://trant755.github.io/Filmoteka/"> LIVE PAGE</a>
-                        <a href="https://github.com/trant755/Filmoteka"> GITHUB</a>
+                         <a class="teamProjLink" href="https://trant755.github.io/Filmoteka/"> LIVE PAGE</a>
+                        <a class="teamProjLink" href="https://github.com/trant755/Filmoteka"> GITHUB</a>
                     </div>
                     <div class="imgCont">
                         <img src="./images/filmoteka.png" alt="one of the team projects" width="360px"/>
@@ -111,8 +118,8 @@
                  <li class="teamProj-item">
                     <h4 class="teamProjItemTitle">Petly Services</h4>
                     <div class="linkTeamProjCont">
-                        <a href="https://iamdorohin.github.io/petly-service/">LIVE PAGE</a>
-                        <a href="https://github.com/IamDorohin/petly-service">GITHUB</a>
+                        <a class="teamProjLink" href="https://iamdorohin.github.io/petly-service/">LIVE PAGE</a>
+                        <a class="teamProjLink" href="https://github.com/IamDorohin/petly-service">GITHUB</a>
                     </div>
                     <div class="imgCont">
                       <img src="./images/petly.png" alt="one of the team projects" width="360px"/>
@@ -181,23 +188,51 @@
     </main>
 
 
-    <footer id="contacts">
-        <h2> My contacts</h2>
-        <ul>
+    <footer id="contacts" class="footer">
+        
+        <h2 class="contacts-title"> My contacts</h2>
+        <ul class="contacts-list">
             <li>
-                <a href="">telegram</a>
+                <a href="https://t.me/maxximusan">
+                    <div class="contactBox">
+                    <svg class="icon-telegram" width="40" height="40">
+                        <use href="./images/symbol-defs.svg#icon-telegram"></use>
+                    </svg>
+                    <p> Telegram </p>
+                </div>
+                </a>
             </li>
             <li>
-                <a href="">linkidin</a>
+                
+                <a href="https://www.linkedin.com/in/maxximusan/">
+                    <div class="contactBox">
+                    <svg class="icon-linkidin" width="40" height="40">
+                        <use href="./images/symbol-defs.svg#icon-linkedin"></use>
+                    </svg>
+                    <p> Linkidin </p>
+                </div>
+                </a>
+            
             </li>
             <li>
-                <a href="">phone</a>
+                <div class="contactBox">
+                    <svg width="40" height="40">
+                        <use href="./images/symbol-defs.svg#icon-phone"> +38 097-628-30-31</use>
+                    </svg>
+                    <p> +38 097-628-30-31 </p>
+                </div>
             </li>
             <li>
-                <a href="">gmail</a>
-            </li>
+                <div class="contactBox">
+                    <svg width="40" height="40">
+                        <use href="./images/symbol-defs.svg#icon-gmail"></use>
+                    </svg>
+                     <p>maksym.chuikov.ne@gmail.com</p>
+               </div>
+            </li>  
             
         </ul>
+    
     </footer>
 </body>
 </html>

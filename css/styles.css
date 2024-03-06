@@ -120,12 +120,12 @@ background-position: center;
     
   }
 
-  .about-title, .portfolio-title {
+  .about-title, .portfolio-title, .contacts-title {
     text-align: center;
     font-size: 36px;
     font-family: 'montserrat', monospace;
     color:forestgreen;
-    margin-bottom: 10px;
+    margin-bottom: 20px;
   }
 
   .main-about{
@@ -165,7 +165,15 @@ margin-bottom: 10px;
 
   .teamProj-item {
     max-width: 400px;
+    background-color:#c7b7a5;
   }
+
+  .teamProj-item:hover,
+.teamProj-item:focus {
+ 
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+    1px 4px 6px rgba(0, 0, 0, 0.16);
+}
 
   .imgCont{
     display: flex;
@@ -180,6 +188,41 @@ margin-bottom: 10px;
 padding: 10px 20px;
   }
 
+  .teamProjLink {
+    color: #0b7c14;
+    padding-bottom: 5px;
+  }
+
+  .teamProjLink:hover,
+  .teamProjLink:focus{
+cursor: pointer;
+  }
    .teamProjItemTitle{
     text-align: center;
+    color: blue;
+    font-size: 20px;
+    
+    padding: 10px 0 20px 0;
+   }
+
+.footer{
+  background-color: #bdb76b99;
+  padding: 20px 0;
+}
+.contacts-list{
+  display: flex;
+  justify-content: space-around;
+}
+   .icon-telegram{
+    fill: rgb(4, 163, 255);
+   }
+
+   .icon-linkidin{
+    fill: blue;
+   }
+
+   .contactBox{
+    display: flex;
+    align-items: center;
+    gap: 10px;
    }
