@@ -46,7 +46,7 @@ html,
   -o-tab-size: 4;
      tab-size: 4;
   /* 3 */
-  font-family: ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  font-family: Roboto, sans-serif;
   /* 4 */
   font-feature-settings: normal;
   /* 5 */
@@ -552,29 +552,33 @@ video {
   position: relative;
 }
 
-.left-24 {
-  left: 6rem;
-}
-
-.top-20 {
-  top: 5rem;
+.left-28 {
+  left: 7rem;
 }
 
 .top-16 {
   top: 4rem;
 }
 
-.left-20 {
-  left: 5rem;
-}
-
-.left-28 {
-  left: 7rem;
-}
-
 .mx-auto {
   margin-left: auto;
   margin-right: auto;
+}
+
+.mb-10 {
+  margin-bottom: 2.5rem;
+}
+
+.mb-4 {
+  margin-bottom: 1rem;
+}
+
+.mb-5 {
+  margin-bottom: 1.25rem;
+}
+
+.mb-8 {
+  margin-bottom: 2rem;
 }
 
 .inline-block {
@@ -606,9 +610,17 @@ video {
   border-color: rgb(243 100 33 / var(--tw-border-opacity));
 }
 
+.bg-bgrAbout {
+  background-color: #ffd87fb8;
+}
+
 .bg-bgrBody {
   --tw-bg-opacity: 1;
   background-color: rgb(197 197 197 / var(--tw-bg-opacity));
+}
+
+.bg-bgrContacts {
+  background-color: #bdb76b99;
 }
 
 .bg-bgrHead {
@@ -618,6 +630,11 @@ video {
 .bg-bgrImg {
   --tw-bg-opacity: 1;
   background-color: rgb(37 34 34 / var(--tw-bg-opacity));
+}
+
+.bg-bgrPortfolio {
+  --tw-bg-opacity: 1;
+  background-color: rgb(166 211 182 / var(--tw-bg-opacity));
 }
 
 .bg-hero-pattern {
@@ -640,12 +657,18 @@ video {
   padding: 1.25rem;
 }
 
-.pb-\[750px\] {
-  padding-bottom: 750px;
+.px-5 {
+  padding-left: 1.25rem;
+  padding-right: 1.25rem;
 }
 
-.pt-12 {
-  padding-top: 3rem;
+.py-5 {
+  padding-top: 1.25rem;
+  padding-bottom: 1.25rem;
+}
+
+.pb-\[750px\] {
+  padding-bottom: 750px;
 }
 
 .pt-4 {
@@ -654,6 +677,15 @@ video {
 
 .text-center {
   text-align: center;
+}
+
+.font-mons {
+  font-family: Montserrat, monospace;
+}
+
+.text-4xl {
+  font-size: 2.25rem;
+  line-height: 2.5rem;
 }
 
 .text-5xl {
@@ -668,4 +700,19 @@ video {
 .text-h1 {
   --tw-text-opacity: 1;
   color: rgb(175 78 10 / var(--tw-text-opacity));
+}
+
+.text-h2 {
+  --tw-text-opacity: 1;
+  color: rgb(34 139 34 / var(--tw-text-opacity));
+}
+
+@font-face {
+  font-family: 'Roboto';
+
+  /* font-style: normal;
+    font-weight: 400;
+    font-display: swap; */
+
+  src: url(/fonts/Roboto-Regular.ttf) format('ttf');
 }
