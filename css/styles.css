@@ -175,35 +175,41 @@ margin-bottom: 10px;
     1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
+.teamProjItemTitle{
+  text-align: center;
+  color: blue;
+  font-size: 20px;
+  
+  padding: 10px 0 20px 0;
+ }
+
+ .linkTeamProjCont{
+  display: flex;
+  justify-content: space-evenly
+}
+
+.teamProjLink {
+  color: #0b7c14;
+  padding-bottom: 5px;
+}
+
+.teamProjLink:hover,
+.teamProjLink:focus{
+cursor: pointer;
+}
+
+
   .imgCont{
     display: flex;
     justify-content: center;
   }
-  .linkTeamProjCont{
-    display: flex;
-    justify-content: space-evenly
-  }
+  
 
   .descriptionTeamItem {
 padding: 10px 20px;
   }
 
-  .teamProjLink {
-    color: #0b7c14;
-    padding-bottom: 5px;
-  }
-
-  .teamProjLink:hover,
-  .teamProjLink:focus{
-cursor: pointer;
-  }
-   .teamProjItemTitle{
-    text-align: center;
-    color: blue;
-    font-size: 20px;
-    
-    padding: 10px 0 20px 0;
-   }
+  
 
 .footer{
   background-color: #bdb76b99;
@@ -213,6 +219,11 @@ cursor: pointer;
   display: flex;
   justify-content: space-around;
 }
+.contactBox{
+  display: flex;
+  align-items: center;
+  gap: 10px;
+ }
    .icon-telegram{
     fill: rgb(4, 163, 255);
    }
@@ -221,8 +232,4 @@ cursor: pointer;
     fill: blue;
    }
 
-   .contactBox{
-    display: flex;
-    align-items: center;
-    gap: 10px;
-   }
+   
