@@ -7,18 +7,22 @@
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     <link rel="icon" href="/images/favicon.ico" />
     <link rel="stylesheet" href="./css/style.css" />
+    
 </head>
 <body>
     <header class=" bg-bgrHead">
-        <nav>
-            <div>
-                <a href="./temporarily.html">go to CSS</a>
-            <ul>
-                <li><a href="#about">about</a></li>
-                <li><a href="#portfolio">portfolio</a></li>
-                <li><a href="#contacts">contacts</a></li>
-            </ul>
-        </div>
+        <nav class="p-5">
+            <div class="flex justify-around items-center">
+                <a class="text-2xl font-bold" href="./temporarily.html">go to CSS</a>
+               <div>
+                 <ul class="flex">
+                  <li class="mr-12 hover:text-red-200 text-xl"><a href="#about">About</a></li>
+                  <li class="mr-12  hover:text-red-200 text-xl"><a href="#portfolio">Portfolio</a></li>
+                   <li class=" hover:text-red-200 text-xl"><a href="#contacts">Contacts</a></li>
+                 </ul>
+              </div>
+              <div>Тут будет смена языков</div>
+           </div>
         </nav>
     </header>
 
@@ -174,11 +178,21 @@
              </ul>
              </div>
         </section>
+
+        <div >
+            <button class="button-to-top" id="btn-to-top">
+            <svg class="to-top-icon" width="40" height="40" id="to-top-icon">
+                <use href="./images/symbol-defs.svg#icon-arrow-up2"></use>
+            </svg>
+            
+        </button>
+        </div>
+
     </main>
 
 
-    <footer id="contacts" class="bg-bgrContacts py-5 px-5">
-        <h2 class="text-center text-4xl font-mons text-h2 mb-5 font-bold"> My contacts</h2>
+    <footer id="contacts" class="bg-bgrContacts pt-10 pb-20 px-5">
+        <h2 class="text-center text-4xl font-mons text-h2 mb-10 font-bold"> My contacts</h2>
         <ul class="flex justify-around">
             <li>
                 <a href="https://t.me/maxximusan">
@@ -186,7 +200,7 @@
                          <svg class="fill-telegram" width="40" height="40">
                               <use href="./images/symbol-defs.svg#icon-telegram"></use>
                          </svg>
-                          <p> Telegram </p>
+                          <p class="text-2xl"> Telegram </p>
                    </div> 
                 </a>
             </li>
@@ -196,7 +210,7 @@
                          <svg class="fill-h4" width="40" height="40">
                              <use href="./images/symbol-defs.svg#icon-linkedin"></use>
                           </svg>
-                          <p> Linkidin </p>
+                          <p class="text-2xl"> Linkidin </p>
                      </div>
                 </a>
             </li>
@@ -205,7 +219,7 @@
                     <svg width="40" height="40">
                         <use href="./images/symbol-defs.svg#icon-phone"> +38 097-628-30-31</use>
                     </svg>
-                    <p> +38 097-628-30-31 </p>
+                    <p class="text-xl"> +38 097-628-30-31 </p>
                 </div>
             </li>
             <li>
@@ -213,7 +227,7 @@
                     <svg width="40" height="40">
                         <use href="./images/symbol-defs.svg#icon-gmail"></use>
                     </svg>
-                     <p>maksym.chuikov.ne@gmail.com</p>
+                     <p class="text-xl">maksym.chuikov.ne@gmail.com</p>
                </div>
             </li>
 
@@ -221,5 +235,8 @@
             
         </ul>
     </footer>
+
+    <script type="module" src="./js/upButton.js"></script>
+
 </body>
 </html>

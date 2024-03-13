@@ -10,3 +10,11 @@
     font-display: swap; */
     src: url(/fonts/Roboto-Regular.ttf) format('ttf');
   }
+
+  .button-to-top {
+    @apply flex justify-center items-center fixed z-50 bg-h2 rounded-3xl w-10 h-10 right-[5px] bottom-[147px] invisible transition-visibility duration-300 ease-in-out hover:transition-all hover:duration-300 hover:bg-h1;
+  }
+
+  .to-top-icon {
+    @apply w-11/12 h-1/2 fill-white transition-visibility duration-300 ease-in-out
+  }

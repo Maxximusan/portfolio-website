@@ -32,7 +32,28 @@ body {
   } */
 
   
- 
+  .temporarilyNAV{
+    display: flex;
+    
+  }
+
+.TNavFont{
+    font-size: 24px;
+    font-weight: 700;
+    margin-right: 200px;
+}
+
+.navUl{
+    display: flex;
+    
+}
+.nav-item {
+  margin-right: 50px;
+}
+
+.nav-item:last-child {
+  margin-right: 0;
+}
 
   .hero-section{
     max-width: 1600px;
@@ -75,28 +96,7 @@ background-position: center;
     transform: perspective(400px) rotateY(10deg);
   }
 
-  .temporarilyNAV{
-    display: flex;
-    
-  }
-
-.TNavFont{
-    font-size: 24px;
-    font-weight: 700;
-    margin-right: 200px;
-}
-
-.navUl{
-    display: flex;
-    
-}
-.nav-item {
-  margin-right: 50px;
-}
-
-.nav-item:last-child {
-  margin-right: 0;
-}
+ 
 
   .pedestal{
     position: absolute;
@@ -232,4 +232,57 @@ padding: 10px 20px;
     fill: blue;
    }
 
-   
+   .button-to-top {
+    /* position: relative; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+  
+    z-index: 999;
+    border: none;
+    background-color: rgb(2, 104, 10);
+    border-radius: 50%;
+  
+    width: 40px;
+    height: 40px;
+    bottom: 147px;
+    right: 5px;
+  
+    visibility: hidden;
+  
+    transition: visibility 350ms ease-in-out, opacity 350ms ease-in-out;
+  
+    
+  
+    @media screen and (min-width: 768px) {
+      right: 15px;
+      bottom: 130px;
+      width: 60px;
+      height: 60px;
+    }
+  
+    @media screen and (min-width: 1280px) {
+      bottom: 120px;
+      width: 60px;
+      height: 60px;
+    }
+  }
+
+  .button-to-top:hover {
+    transition: all 300ms cubic-bezier(0.165, 0.84, 0.44, 1);
+    background-color: #ff6b01;
+    transition: all 300ms;
+  }
+  
+  /* .button-to-top:active {
+    background-color: #ff6b01b2;
+    transition: all 200ms;
+  } */
+  
+  .to-top-icon {
+    width: 90%;
+    height: 50%;
+    transition: visibility 350ms ease-in-out, opacity 350ms ease-in-out;
+    fill: white;
+  }
