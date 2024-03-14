@@ -34,7 +34,7 @@ body {
   
   .temporarilyNAV{
     display: flex;
-    
+    justify-content: space-evenly;
   }
 
 .TNavFont{
@@ -188,13 +188,18 @@ margin-bottom: 10px;
   justify-content: space-evenly
 }
 
-.teamProjLink {
+.teamProjLink, .teamProjLink2 {
   color: #0b7c14;
   padding-bottom: 5px;
 }
 
 .teamProjLink:hover,
 .teamProjLink:focus{
+cursor: pointer;
+}
+
+.teamProjLink2:hover,
+.teamProjLink2:focus{
 cursor: pointer;
 }
 

@@ -24,10 +24,23 @@
           
                 <div class="navBox">
                      <ul class="navUl">
-                      <li class="nav-item "><a href="#about">about</a></li>
-                      <li class="nav-item "><a href="#portfolio">portfolio</a></li>
-                     <li class="nav-item "><a href="#contacts">contacts</a></li>
+                      <li id="nav-about" class="nav-item " >
+                        <a href="#about" data-lang="nv-about">about</a>
+                      </li>
+                      <li id="nav-portfolio" class="nav-item " >
+                        <a href="#portfolio" data-lang2="nv-portfolio">portfolio</a>
+                    </li>
+                     <li id="nav-conacts" class="nav-item " >
+                        <a href="#contacts" data-lang="nv-contacts">contacts</a>
+                    </li>
                     </ul>
+                </div>
+                <div>
+                    <select class="change-lang">
+                        <option value="ru">RU</option>
+                        <option value="en" selected>EN</option>
+                        <option value="ua">UA</option>
+                    </select>
                 </div>
           </div>
         </nav>
@@ -36,7 +49,7 @@
     <main>
         <section class="hero-section">
             <div class="hero-section__container">
-                <h1 class="hero-section__h1"> Maksym Chuikov </h1>
+                <h1 class="hero-section__h1" id="hero-title" data-lang="h1"> Maksym Chuikov </h1>
                 <!-- <p class="hero-section__p"> Hi there! I'm a Maksim Chuikov, front end developer based on Kharkov. I'm looking for my first job.</p> -->
                 <div class="forPedestal">
                     <div class="pedestal"></div>
@@ -52,7 +65,7 @@
         <section id="about"  class="about">
             
             
-                <h2 class="about-title"> about </h2>
+                <h2 class="about-title"> About </h2>
                 <div class="main-about">
                 <h3 class="ma-text"> Hi there! I'm a Maksim Chuikov, front end developer based on Kharkov. I'm looking for my first job.</h3>
              <p class="ma-text">  
@@ -79,53 +92,53 @@
         </section>
 
         <section id="portfolio" class="portfolio">
-            <h2 class="portfolio-title"> Portfolio </h2>
+            <h2 class="portfolio-title" id="portfolio-h2" data-lang2="nv-portfolio"> Portfolio </h2>
             <div class="prog-box">
-                <h3 class="progects-title"> Team projects</h3>
+                <h3 class="progects-title" id="team-project-h3" data-lang="team-projects"> Team projects</h3>
                 
              
              <ul class="teamProj-list">
                  <li class="teamProj-item">
-                    <h4 class="teamProjItemTitle">Ice-cream</h4>
+                    <h4 class="teamProjItemTitle" id="ict-h4" data-lang="ice-cream-title">Ice-cream</h4>
                     <div class="linkTeamProjCont">
-                      <a class="teamProjLink" href="https://iamdorohin.github.io/project-22-IceCream/"> LIVE PAGE</a>
-                      <a class="teamProjLink" href="https://github.com/IamDorohin/project-22-IceCream"> GITHUB</a>
+                      <a class="teamProjLink" href="https://iamdorohin.github.io/project-22-IceCream/" > LIVE PAGE</a>
+                      <a class="teamProjLink2" href="https://github.com/IamDorohin/project-22-IceCream" > GITHUB</a>
                    </div>
                    <div class="imgCont">
                         <img src="./images/ice-cream.png" alt="one of the team projects" width="360px"/>
                     </div>
                     
-                    <p class="descriptionTeamItem"> 
+                    <p class="descriptionTeamItem" id="ice-p" data-lang="ice-cream-description"> 
                         Educational group project. The ice-cream company's website, with an order form, product
                         details and a map of sales outlets. The website with a responsive layout.
                         I created a section products, and animation for it.
                     </p>
                 </li>
                  <li class="teamProj-item">
-                    <h4 class="teamProjItemTitle">Filmoteca</h4>
+                    <h4 class="teamProjItemTitle" id="ft-h4" data-lang="filmoteka-title">Filmoteca</h4>
                     <div class="linkTeamProjCont">
-                         <a class="teamProjLink" href="https://trant755.github.io/Filmoteka/"> LIVE PAGE</a>
-                        <a class="teamProjLink" href="https://github.com/trant755/Filmoteka"> GITHUB</a>
+                         <a class="teamProjLink" href="https://trant755.github.io/Filmoteka/" > LIVE PAGE</a>
+                        <a class="teamProjLink2" href="https://github.com/trant755/Filmoteka" > GITHUB</a>
                     </div>
                     <div class="imgCont">
                         <img src="./images/filmoteka.png" alt="one of the team projects" width="360px"/>
                     </div>
-                    <p class="descriptionTeamItem">
+                    <p class="descriptionTeamItem" id="film-p" data-lang="filmoteka-description">
                         Educational group project. A film search site with the ability to read information about the
                         films, watch a trailer and add films to the library.
                         I created functionality for obtaining movie data from the API, drawing their cards and drawing in a modal window. 
                     </p>
                 </li>
                  <li class="teamProj-item">
-                    <h4 class="teamProjItemTitle">Petly Services</h4>
+                    <h4 class="teamProjItemTitle" id="pst-h4" data-lang="petly-service-title">Petly Services</h4>
                     <div class="linkTeamProjCont">
-                        <a class="teamProjLink" href="https://iamdorohin.github.io/petly-service/">LIVE PAGE</a>
-                        <a class="teamProjLink" href="https://github.com/IamDorohin/petly-service">GITHUB</a>
+                        <a class="teamProjLink" href="https://iamdorohin.github.io/petly-service/" >LIVE PAGE</a>
+                        <a class="teamProjLink2" href="https://github.com/IamDorohin/petly-service" >GITHUB</a>
                     </div>
                     <div class="imgCont">
                       <img src="./images/petly.png" alt="one of the team projects" width="360px"/>
                     </div>
-                    <p class="descriptionTeamItem">
+                    <p class="descriptionTeamItem" id="pet-p" data-lang="petly-services-description">
                         Educational group project. The application of the service of announcements for the
                         adaptation of pets and related news and partners. Has a personal user profile with the
                         ability to keep a history of your pet.
@@ -245,6 +258,8 @@
     </footer>
 
     <script type="module" src="./js/upButton.js"></script>
+    <script type="module" src="./js/lang.js"></script>
+    <script type="module" src="./js//selectLang.js"></script>
 </body>
 
 
