@@ -44,7 +44,99 @@ module.exports = {
       transitionProperty: {
         'visibility': 'visibility , opacity',
         
-      }
+      },
+      keyframes: {
+        changeColorLP : {
+          '0%' :  {
+            color: '#ffff00'          
+          },
+          '30%': {
+            color: '#f83016'           
+          },
+          '50%': {
+            color: '#2cad12'                
+          },
+          '54%': {
+            color: '#36f8e8'         
+          },
+          '57%': {
+            color: '#2cad12'              
+          },
+          '60%': {
+            color: '#36f8e8'         
+          },
+          '63%': {
+            color: '#2cad12'                
+          },
+          '67%': {
+            color: '#36f8e8'                
+          },
+          '70%': {
+            color: '#2cad12'                 
+          },
+          '73%': {
+            color: '#36f8e8'                
+          },
+          '77%': {
+            color: '#2cad12'                
+          },
+          '80%': {
+            color: '#36f8e8'       
+          },
+      
+          '100%': {
+            color: '#ffff00'          
+          }
+        },
+        changeColorGit : {
+          '0%' :  {
+            color: '#2cad12'        
+          },
+          '30%': {
+            color: '#36f8e8'           
+          },
+          '50%': {
+            color: '#ffff00'                
+          },
+          '54%': {
+            color: '#f83016'        
+          },
+          '57%': {
+            color: '#ffff00'              
+          },
+          '60%': {
+            color: '#f83016'           
+          },
+          '63%': {
+            color: '#ffff00'                
+          },
+          '67%': {
+            color: '#f83016'                 
+          },
+          '70%': {
+            color: '#ffff00'                  
+          },
+          '73%': {
+            color: '#f83016'                   
+          },
+          '77%': {
+            color: '#ffff00'               
+          },
+          '80%': {
+            color: '#f83016'          
+          },
+      
+          '100%': {
+            color: '#2cad12'        
+          }
+        } ,
+      },
+
+      animation: {
+        changeGitColor: 'changeColorGit 10000ms 1000ms infinite',
+        changeLPColor: 'changeColorLP 10000ms 1000ms infinite',
+      },
+      
     },
   },
   plugins: [],

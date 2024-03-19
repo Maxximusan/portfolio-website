@@ -601,10 +601,6 @@ video {
   margin-bottom: 2rem;
 }
 
-.mr-12 {
-  margin-right: 3rem;
-}
-
 .inline-block {
   display: inline-block;
 }
@@ -617,6 +613,10 @@ video {
   max-height: 800px;
 }
 
+.min-w-96 {
+  min-width: 24rem;
+}
+
 .max-w-400 {
   max-width: 25rem;
 }
@@ -627,6 +627,126 @@ video {
 
 .grow {
   flex-grow: 1;
+}
+
+@keyframes changeColorGit {
+  0% {
+    color: #2cad12;
+  }
+
+  30% {
+    color: #36f8e8;
+  }
+
+  50% {
+    color: #ffff00;
+  }
+
+  54% {
+    color: #f83016;
+  }
+
+  57% {
+    color: #ffff00;
+  }
+
+  60% {
+    color: #f83016;
+  }
+
+  63% {
+    color: #ffff00;
+  }
+
+  67% {
+    color: #f83016;
+  }
+
+  70% {
+    color: #ffff00;
+  }
+
+  73% {
+    color: #f83016;
+  }
+
+  77% {
+    color: #ffff00;
+  }
+
+  80% {
+    color: #f83016;
+  }
+
+  100% {
+    color: #2cad12;
+  }
+}
+
+.animate-changeGitColor {
+  animation: changeColorGit 10000ms 1000ms infinite;
+}
+
+@keyframes changeColorLP {
+  0% {
+    color: #ffff00;
+  }
+
+  30% {
+    color: #f83016;
+  }
+
+  50% {
+    color: #2cad12;
+  }
+
+  54% {
+    color: #36f8e8;
+  }
+
+  57% {
+    color: #2cad12;
+  }
+
+  60% {
+    color: #36f8e8;
+  }
+
+  63% {
+    color: #2cad12;
+  }
+
+  67% {
+    color: #36f8e8;
+  }
+
+  70% {
+    color: #2cad12;
+  }
+
+  73% {
+    color: #36f8e8;
+  }
+
+  77% {
+    color: #2cad12;
+  }
+
+  80% {
+    color: #36f8e8;
+  }
+
+  100% {
+    color: #ffff00;
+  }
+}
+
+.animate-changeLPColor {
+  animation: changeColorLP 10000ms 1000ms infinite;
+}
+
+.cursor-help {
+  cursor: help;
 }
 
 .flex-wrap {
@@ -713,6 +833,25 @@ video {
 .bg-bgrProjItem2 {
   --tw-bg-opacity: 1;
   background-color: rgb(187 176 213 / var(--tw-bg-opacity));
+}
+
+.bg-green-200 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(187 247 208 / var(--tw-bg-opacity));
+}
+
+.bg-inherit {
+  background-color: inherit;
+}
+
+.bg-red-200 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(254 202 202 / var(--tw-bg-opacity));
+}
+
+.bg-yellow-200 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(254 240 138 / var(--tw-bg-opacity));
 }
 
 .bg-hero-pattern {

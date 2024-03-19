@@ -45,29 +45,46 @@ document.querySelector('title').innerHTML = langArray['title'][hash]
 // document.querySelector('#nav-portfolio').innerHTML = langArray['nv-portfolio'][hash]
 // document.querySelector('#nav-conacts').innerHTML = langArray['nv-contacts'][hash]
 
-// вариант№2 -по уникальным дата атрибутам
-for(let key in langArray){
-const elem = document.querySelector(`[data-lang=${key}]`)
-if(elem){
+// вариант№2 -по уникальным дата атрибутам 
+// for(let key in langArray){
+// const elem = document.querySelector(`[data-lang=${key}]`)
+// if(elem){
+//     elem.textContent = langArray[key][hash]
+// }
+// }
+
+// вариант #2.1 (так не переберает унаследованные свойства)
+const keys = Object.keys(langArray)
+
+for (let key of keys){
+   const elem = document.querySelector(`[data-lang=${key}]`)
+   if(elem){
     elem.textContent = langArray[key][hash]
+
+    if(elem.textContent === ''){
+    elem.textContent = langArray[key]['en']
 }
+    
+} 
+
 }
 
 
 
-// Вариант3 - многоиспользуемые по дата атрибутам
+
+// + Вариант3 - многоиспользуемые по дата атрибутам
 document.querySelectorAll('[data-lang2]').forEach((elem) => elem.innerHTML = langArray['nv-portfolio'][hash])
-
+document.querySelectorAll('[data-lang3]').forEach((elem) => elem.innerHTML = langArray['nv-about'][hash])
+document.querySelectorAll('[data-lang4]').forEach((elem) => elem.innerHTML = langArray['livePageLink'][hash])
+document.querySelectorAll('[data-lang5]').forEach((elem) => elem.innerHTML = langArray['GithubLink'][hash])
 
 
 // вариант№3.1 - многоиспользуемым по классам для одинаковых
-document.querySelectorAll('.teamProjLink').forEach((elem) => elem.innerHTML = langArray['livePageLink'][hash])
-document.querySelectorAll('.teamProjLink2').forEach((elem) => elem.innerHTML = langArray['GithubLink'][hash])
+// document.querySelectorAll('.live-page-link').forEach((elem) => elem.innerHTML = langArray['livePageLink'][hash])
+// document.querySelectorAll('.github-link').forEach((elem) => elem.innerHTML = langArray['GithubLink'][hash])
 
-console.log(document.querySelectorAll('.teamProjLink'));
-// document.querySelector('#ice-p').innerHTML = langArray['ice-cream-description'][hash]
-// document.querySelector('#film-p').innerHTML = langArray['filmoteka-description'][hash]
-// document.querySelector('#pet-p').innerHTML = langArray['petly-services-description'][hash]
+
+
 
 
 
@@ -75,11 +92,3 @@ console.log(document.querySelectorAll('.teamProjLink'));
 }
 
 
-// const keys = Object.keys(langArray)
-// console.log(keys);
-
-// const values = Object.values(langArray)
-// console.log(values);
-
-// const opla = Object.values(values)
-// console.log(opla);

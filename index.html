@@ -14,14 +14,27 @@
         <nav class="p-5">
             <div class="flex justify-around items-center">
                 <a class="text-2xl font-bold" href="./temporarily.html">go to CSS</a>
-               <div>
-                 <ul class="flex">
-                  <li class="mr-12 hover:text-red-200 text-xl"><a href="#about">About</a></li>
-                  <li class="mr-12  hover:text-red-200 text-xl"><a href="#portfolio">Portfolio</a></li>
-                   <li class=" hover:text-red-200 text-xl"><a href="#contacts">Contacts</a></li>
+                
+               <div class="min-w-96">
+                 <ul class="flex justify-between" >
+                   <li class=" hover:text-red-200 text-xl">
+                     <a href="#about" data-lang3="nv-about">About</a>
+                   </li>
+                   <li class=" hover:text-red-200 text-xl">
+                     <a href="#portfolio" data-lang2="nv-portfolio">Portfolio</a>
+                   </li>
+                   <li class=" hover:text-red-200 text-xl">
+                     <a href="#contacts" data-lang="nv-contacts">Contacts</a>
+                   </li>
                  </ul>
               </div>
-              <div>Тут будет смена языков</div>
+              <div>
+                <select class="bg-inherit cursor-help">
+                    <option value="ru" class="bg-red-200 ">RU</option>
+                    <option value="en" selected class="bg-green-200 ">EN</option>
+                    <option value="ua" class="bg-yellow-200 ">UA</option>
+                </select>
+              </div>
            </div>
         </nav>
     </header>
@@ -29,7 +42,7 @@
     <main class="bg-bgrBody">
         <section class="mx-auto pt-4 pb-[750px] max-w-screen-2xl max-h-[800px]  bg-hero-pattern bg-cover bg-no-repeat bg-center">
             <div class="relative">
-                <h1 class="text-h1 text-5xl text-center font-bold"> Maksym Chuikov </h1>
+                <h1 class="text-h1 text-5xl text-center font-bold" data-lang="h1"> Maksym Chuikov </h1>
                 <!-- <p class="text-center"> Hi there! I'm a Maksim Chuikov, front end developer based on Kharkov. I'm looking for my first job.</p> -->
                 <div class="p-5 bg-bgrImg inline-block absolute left-28 top-16 border-2 border-solid border-border">
                   <img src="./images/IMG_8180.jpg" alt="My photo" width="300px"/>
@@ -39,15 +52,15 @@
         </section>
 
         <section id="about" class="bg-bgrAbout py-5 px-5">
-            <h2 class="text-center text-4xl font-mons text-h2 mb-5 font-bold" > about </h2>
+            <h2 class="text-center text-4xl font-mons text-h2 mb-5 font-bold" data-lang3="nv-about"> about </h2>
             <div class="text-center mb-10">
-            <h3 class="mb-4 font-bold"> Hi there! I'm a Maksim Chuikov, front end developer based on Kharkov. I'm looking for my first job.</h3>
-           <p class="mb-4">  
+            <h3 class="mb-4 font-bold" data-lang="about-title"> Hi there! I'm a Maksim Chuikov, front end developer based on Kharkov. I'm looking for my first job.</h3>
+           <p class="mb-4" data-lang="about-experiance">  
             Last year i have ended full-stack courses. 
             I have experience in realization individual and team projects, that you can see in section below.
             Now i keep studying on my own, and progresinng in english too. 
           </p>
-          <p class="mb-4"> I am ready to work, get the necessary practice and experience to become a true professional. I am looking for a reliable company that values its employees in any life circumstances, ready to grow its stars for long-term cooperation. If you are such a company and I to be with you, then you will get a reliable person.</p>
+          <p class="mb-4" data-lang="about-looking"> I am ready to work, get the necessary practice and experience to become a true professional. I am looking for a reliable company that values its employees in any life circumstances, ready to grow its stars for long-term cooperation. If you are such a company and I to be with you, then you will get a reliable person.</p>
         </div>
         <div class="text-center">
           <h3 class="font-bold"> Random facts:</h3>
@@ -65,51 +78,51 @@
         </section>
 
         <section id="portfolio" class="bg-bgrPortfolio py-5 px-5">
-            <h2 class="text-center text-4xl font-mons text-h2 mb-5 font-bold"> Portfolio </h2>
+            <h2 class="text-center text-4xl font-mons text-h2 mb-5 font-bold" data-lang2="nv-portfolio"> Portfolio </h2>
             <div class="mb-8">
-                <h3 class="font-bold text-2xl text-center mb-3"> Team projects</h3>
+                <h3 class="font-bold text-2xl text-center mb-3" data-lang="team-projects"> Team projects</h3>
                 
              <ul class="flex justify-between">
                  <li class="bg-bgrProjItem max-w-400 hover:shadow-forProjects focus:shadow-forProjects">
-                    <h4 class="text-center text-xl text-h4 pt-2.5 pb-5 font-bold">Ice-cream</h4>
+                    <h4 class="text-center text-xl text-h4 pt-2.5 pb-5 font-bold" data-lang="ice-cream-title">Ice-cream</h4>
                     <div class="flex justify-evenly mb-1.5">
-                         <a class="text-gitLink " href="https://iamdorohin.github.io/project-22-IceCream/"> LIVE PAGE</a>
-                         <a class="text-gitLink " href="https://github.com/IamDorohin/project-22-IceCream"> GITHUB</a>
+                         <a class="text-gitLink animate-changeLPColor" data-lang4="livePageLink" href="https://iamdorohin.github.io/project-22-IceCream/"> LIVE PAGE</a>
+                         <a class="text-gitLink animate-changeGitColor" data-lang5="GithubLink" href="https://github.com/IamDorohin/project-22-IceCream"> GITHUB</a>
                     </div>
                     <div class="flex justify-center">
                         <img src="./images/ice-cream.png" alt="one of the team projects" width="360px"/>
                     </div>
-                    <p class="py-2.5 px-5"> 
+                    <p class="py-2.5 px-5" data-lang="ice-cream-description"> 
                         Educational group project after html\css course. The ice-cream company's website, with an order form, product
                         details and a map of sales outlets. The website with a responsive layout.
                         I created a section products, and animation for it.
                     </p>
                 </li>
                  <li class="bg-bgrProjItem max-w-400 hover:shadow-forProjects focus:shadow-forProjects">
-                    <h4 class="text-center text-xl text-h4 pt-2.5 pb-5 font-bold">Filmoteca</h4>
+                    <h4 class="text-center text-xl text-h4 pt-2.5 pb-5 font-bold" data-lang="filmoteka-title">Filmoteca</h4>
                     <div class="flex justify-evenly mb-1.5">
-                          <a class="text-gitLink " href="https://trant755.github.io/Filmoteka/"> LIVE PAGE</a>
-                         <a class="text-gitLink " href="https://github.com/trant755/Filmoteka"> GITHUB</a>
+                          <a class="text-gitLink animate-changeLPColor" data-lang4="livePageLink" href="https://trant755.github.io/Filmoteka/"> LIVE PAGE</a>
+                         <a class="text-gitLink animate-changeGitColor" data-lang5="GithubLink" href="https://github.com/trant755/Filmoteka"> GITHUB</a>
                     </div>
                     <div class="flex justify-center">
                         <img src="./images/filmoteka.png" alt="one of the team projects" width="360px"/>
                     </div>
-                    <p class="py-2.5 px-5">
+                    <p class="py-2.5 px-5" data-lang="filmoteka-description">
                         Educational group project after javascript course. A film search site with the ability to read information about the
                         films, watch a trailer and add films to the library.
                         I created functionality for obtaining movie data from the API, drawing their cards and drawing in a modal window. 
                     </p>
                 </li>
                  <li class="bg-bgrProjItem max-w-400 hover:shadow-forProjects focus:shadow-forProjects">
-                    <h4 class="text-center text-xl text-h4 pt-2.5 pb-5 font-bold">Petly Services</h4>
+                    <h4 class="text-center text-xl text-h4 pt-2.5 pb-5 font-bold" data-lang="petly-service-title" >Petly Services</h4>
                     <div class="flex justify-evenly mb-1.5">
-                       <a class="text-gitLink" href="https://iamdorohin.github.io/petly-service/">LIVE PAGE</a>
-                       <a class="text-gitLink " href="https://github.com/IamDorohin/petly-service">GITHUB</a>
+                       <a class="text-gitLink animate-changeLPColor" data-lang4="livePageLink" href="https://iamdorohin.github.io/petly-service/">LIVE PAGE</a>
+                       <a class="text-gitLink animate-changeGitColor" data-lang5="GithubLink" href="https://github.com/IamDorohin/petly-service">GITHUB</a>
                    </div>
                    <div class="flex justify-center">
                       <img src="./images/petly.png" alt="one of the team projects" width="360px"/>
                    </div>
-                    <p class="py-2.5 px-5">
+                    <p class="py-2.5 px-5" data-lang="petly-services-description">
                         Educational group project after react\node course. The application of the service of announcements for the
                         adaptation of pets and related news and partners. Has a personal user profile with the
                         ability to keep a history of your pet.
@@ -120,58 +133,58 @@
             </div>
 
             <div class="mb-8">
-                <h3 class="font-bold text-2xl text-center mb-3"> Individual projects</h3>
+                <h3 class="font-bold text-2xl text-center mb-3" data-lang="individual-projects"> Individual projects</h3>
                 
              <ul class="flex flex-wrap gap-5 justify-between">
                 
                  <li class="bg-bgrProjItem2 max-w-400 hover:shadow-forProjects focus:shadow-forProjects p-2.5">
-                    <h4 class="text-center text-xl text-h4 mb-5 font-bold">Phonebook</h4>
+                    <h4 class="text-center text-xl text-h4 mb-5 font-bold" data-lang="phonebook-title" >Phonebook</h4>
                     <div class="flex flex-wrap justify-center gap-2.5">
-                      <a class="text-gitLink" href="https://maxximusan.github.io/goit-react-hw-08-phonebook/">LIVE PAGE</a>
-                      <p>Educational project as part of the react course. Upgraded after. Details you can see at the link below in «readmy»</p>
-                      <a class="text-gitLink" href="https://github.com/Maxximusan/goit-react-hw-08-phonebook">GITHUB</a>
+                      <a class="text-gitLink animate-changeLPColor" data-lang4="livePageLink" href="https://maxximusan.github.io/goit-react-hw-08-phonebook/">LIVE PAGE</a>
+                      <p data-lang="phonebook-description" >Educational project as part of the react course. Improved after. Details you can see at the link below in «readmy»</p>
+                      <a class="text-gitLink animate-changeGitColor" data-lang5="GithubLink" href="https://github.com/Maxximusan/goit-react-hw-08-phonebook">GITHUB</a>
                     </div>
                 </li>
                  <li class="bg-bgrProjItem2 max-w-400 hover:shadow-forProjects focus:shadow-forProjects p-2.5">
-                    <h4 class="text-center text-xl text-h4 mb-5 font-bold">Search movies</h4>
+                    <h4 class="text-center text-xl text-h4 mb-5 font-bold" data-lang="search-movies-title" >Search movies</h4>
                     <div class="flex flex-wrap justify-center gap-2.5">
-                      <a class="text-gitLink" href="https://maxximusan.github.io/goit-react-hw-05-movies/">LIVE PAGE</a>
-                      <p>Educational project as part of the react course. Upgraded after. Details you can see at the link below in «readmy»</p>
-                      <a class="text-gitLink" href="https://github.com/Maxximusan/goit-react-hw-05-movies">GITHUB</a>
+                      <a class="text-gitLink animate-changeLPColor" data-lang4="livePageLink" href="https://maxximusan.github.io/goit-react-hw-05-movies/">LIVE PAGE</a>
+                      <p data-lang="search-movies-description" >Educational project as part of the react course. Improved after. Details you can see at the link below in «readmy»</p>
+                      <a class="text-gitLink animate-changeGitColor" data-lang5="GithubLink" href="https://github.com/Maxximusan/goit-react-hw-05-movies">GITHUB</a>
                     </div>
                 </li>
                 <li class="bg-bgrProjItem2 max-w-400 hover:shadow-forProjects focus:shadow-forProjects p-2.5">
-                    <h4 class="text-center text-xl text-h4 mb-5 font-bold">Web-stuidio</h4>
+                    <h4 class="text-center text-xl text-h4 mb-5 font-bold" data-lang="web-stuidio-title" >Web-stuidio</h4>
                     <div class="flex flex-wrap justify-center gap-2.5">
-                         <a class="text-gitLink"  href="https://maxximusan.github.io/homework-8/">LIVE PAGE</a>
-                         <p>Educational project as part of the html & css course. Details you can see at the link below in «readmy»</p>
-                          <a class="text-gitLink" href="https://github.com/Maxximusan/homework-8">GITHUB</a>
+                         <a class="text-gitLink animate-changeLPColor" data-lang4="livePageLink" href="https://maxximusan.github.io/homework-8/">LIVE PAGE</a>
+                         <p data-lang="web-stuidio-description">Educational project as part of the html & css course. Details you can see at the link below in «readmy»</p>
+                          <a class="text-gitLink animate-changeGitColor" data-lang5="GithubLink" href="https://github.com/Maxximusan/homework-8">GITHUB</a>
                     </div>
                 </li>
                   <li class="bg-bgrProjItem2 max-w-400 hover:shadow-forProjects focus:shadow-forProjects p-2.5">
-                    <h4 class="text-center text-xl text-h4 mb-5 font-bold">React Native Progect</h4>
+                    <h4 class="text-center text-xl text-h4 mb-5 font-bold" data-lang="rn-project-tittle" >React Native Project</h4>
                     <div class="flex flex-wrap justify-center gap-2.5">
-                       <p>Educational project as part of the react-native additional course. Details, and how open this app - you can see at the link below in «readmy». </p>
-                       <a class="text-gitLink" href="https://github.com/Maxximusan/React-Native-project">GITHUB</a>
+                       <p data-lang="rn-proj-description">Educational project as part of the react-native additional course. Details, and how open this app - you can see at the link below in «readmy». </p>
+                       <a class="text-gitLink animate-changeGitColor" data-lang5="GithubLink" href="https://github.com/Maxximusan/React-Native-project">GITHUB</a>
                     </div>
                 </li>
                   <li class="bg-bgrProjItem2 max-w-400 hover:shadow-forProjects focus:shadow-forProjects p-2.5">
-                    <h4 class="text-center text-xl text-h4 mb-5 font-bold">Find your favorite cats</h4>
+                    <h4 class="text-center text-xl text-h4 mb-5 font-bold" data-lang="find-your-favorite-cats" >Find your favorite cats</h4>
                    
-                       <p class="mb-2.5"> At this project i repeated some had learned moments earlier, tryed to figure out in new libraries and other things. It hasn't ended yet. Later will be backend here too.</p>
+                       <p class="mb-2.5" data-lang="cats-description"> At this project i repeated some had learned moments earlier, tryed to figure out in new libraries and other things. It hasn't ended yet. Later will be backend here too.</p>
                        <div class="flex  justify-evenly">
-                            <a class="text-gitLink" href="https://maxximusan.github.io/study-ped-proj/">LIVE PAGE</a>
-                            <a class="text-gitLink" href="https://github.com/Maxximusan/study-ped-proj">GITHUB</a>
+                            <a class="text-gitLink animate-changeLPColor" data-lang4="livePageLink" href="https://maxximusan.github.io/study-ped-proj/">LIVE PAGE</a>
+                            <a class="text-gitLink animate-changeGitColor" data-lang5="GithubLink" href="https://github.com/Maxximusan/study-ped-proj">GITHUB</a>
                        </div>
                     
                 </li>
                 <li class="bg-bgrProjItem2 max-w-400 hover:shadow-forProjects focus:shadow-forProjects p-2.5">
-                    <h4 class="text-center text-xl text-h4 mb-5 font-bold">Rock stars singers</h4>
+                    <h4 class="text-center text-xl text-h4 mb-5 font-bold" data-lang="rock-stars-singers" >Rock stars singers</h4>
                     
-                         <p class="mb-2.5">The test task, and at current version uses type script. Details you can see at the link below in «readmy» </p>
+                         <p class="mb-2.5" data-lang="singers-description" >The test task, and at current version uses type script. Details you can see at the link below in «readmy» </p>
                          <div class="flex  justify-evenly">
-                            <a class="text-gitLink" href="https://maxximusan.github.io/test-proj-3.0-with-ts/">LIVE PAGE</a>
-                            <a class="text-gitLink" href="https://github.com/Maxximusan/test-proj-3.0-with-ts">GITHUB</a>
+                            <a class="text-gitLink animate-changeLPColor" data-lang4="livePageLink" href="https://maxximusan.github.io/test-proj-3.0-with-ts/">LIVE PAGE</a>
+                            <a class="text-gitLink animate-changeGitColor" data-lang5="GithubLink" href="https://github.com/Maxximusan/test-proj-3.0-with-ts">GITHUB</a>
                          </div>
                 </li>
             
@@ -192,7 +205,7 @@
 
 
     <footer id="contacts" class="bg-bgrContacts pt-10 pb-20 px-5">
-        <h2 class="text-center text-4xl font-mons text-h2 mb-10 font-bold"> My contacts</h2>
+        <h2 class="text-center text-4xl font-mons text-h2 mb-10 font-bold" data-lang="my-contacts-title"> My contacts</h2>
         <ul class="flex justify-around">
             <li>
                 <a href="https://t.me/maxximusan">
@@ -200,7 +213,7 @@
                          <svg class="fill-telegram" width="40" height="40">
                               <use href="./images/symbol-defs.svg#icon-telegram"></use>
                          </svg>
-                          <p class="text-2xl"> Telegram </p>
+                          <p class="text-2xl" data-lang="telega"> Telegram </p>
                    </div> 
                 </a>
             </li>
@@ -210,7 +223,7 @@
                          <svg class="fill-h4" width="40" height="40">
                              <use href="./images/symbol-defs.svg#icon-linkedin"></use>
                           </svg>
-                          <p class="text-2xl"> Linkidin </p>
+                          <p class="text-2xl" data-lang="linkdin"> Linkidin </p>
                      </div>
                 </a>
             </li>
@@ -237,6 +250,7 @@
     </footer>
 
     <script type="module" src="./js/upButton.js"></script>
-     
+    <script type="module" src="./js/lang.js"></script>
+    <script type="module" src="./js//selectLang.js"></script>
 </body>
 </html>

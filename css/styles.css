@@ -1,8 +1,12 @@
+/* html {
+  scroll-behavior: smooth;
+} */
 body {
     color: #252222;
     background-color: rgb(255, 255, 255);
     /* background-color: rgb(68 68 68) */
     font-family: 'roboto', sans-serif;
+    
   }
   h1,
   h2,
@@ -30,7 +34,7 @@ body {
   /* .ww{
     font-family: "Montserrat", sans-serif;
   } */
-
+ 
   
   .temporarilyNAV{
     display: flex;
@@ -42,18 +46,20 @@ body {
     font-weight: 700;
     margin-right: 200px;
 }
-
+.navBox{
+  min-width: 320px;
+}
 .navUl{
     display: flex;
-    
+    justify-content: space-between;
 }
-.nav-item {
+/* .nav-item {
   margin-right: 50px;
 }
 
 .nav-item:last-child {
   margin-right: 0;
-}
+} */
 
   .hero-section{
     max-width: 1600px;
@@ -188,9 +194,25 @@ margin-bottom: 10px;
   justify-content: space-evenly
 }
 
-.teamProjLink, .teamProjLink2 {
+.teamProjLink {
   color: #0b7c14;
   padding-bottom: 5px;
+
+
+  animation-name: changeColorLP;
+  animation-duration: 10000ms;
+  animation-delay: 1000ms;
+  animation-iteration-count: infinite;
+}
+.teamProjLink2{
+  color: #0b7c14;
+  padding-bottom: 5px;
+
+
+  animation-name: changeColorGit;
+  animation-duration: 10000ms;
+  animation-delay: 1000ms;
+  animation-iteration-count: infinite;
 }
 
 .teamProjLink:hover,
@@ -237,6 +259,7 @@ padding: 10px 20px;
     fill: blue;
    }
 
+   
    .button-to-top {
     /* position: relative; */
     display: flex;
@@ -290,4 +313,119 @@ padding: 10px 20px;
     height: 50%;
     transition: visibility 350ms ease-in-out, opacity 350ms ease-in-out;
     fill: white;
+  }
+
+
+  @keyframes changeColorLP {
+    0% {
+      color: yellow;
+     
+    }
+    30% {
+      color: #f83016;
+      
+    }
+    50% {
+      color: #2cad12;
+           
+    }
+    54% {
+      color: #36f8e8;
+      
+    }
+    57% {
+      color: #2cad12;
+           
+    }
+    60% {
+      color: #36f8e8;
+      
+    }
+    63% {
+      color: #2cad12;
+            
+    }
+    67% {
+      color: #36f8e8;
+           
+    }
+    70% {
+      color: #2cad12;
+            
+    }
+    73% {
+      color: #36f8e8;
+           
+    }
+    77% {
+      color: #2cad12;
+            
+    }
+    80% {
+      color: #36f8e8;
+           
+    }
+
+    100% {
+      color: #ffff00;
+     
+    }
+  }
+
+
+  @keyframes changeColorGit {
+    0% {
+     
+      color: #2cad12;
+    }
+    30% {
+     
+      color: #36f8e8;
+      
+    }
+    50% {
+      color: yellow;
+           
+    }
+    54% {
+      color: #f83016;
+      
+    }
+    57% {
+      color: yellow;
+           
+    }
+    60% {
+      color: #f83016;
+      
+    }
+    63% {
+      color: yellow;
+            
+    }
+    67% {
+      color: #f83016;
+           
+    }
+    70% {
+      color: yellow;
+            
+    }
+    73% {
+      color: #f83016;
+           
+    }
+    77% {
+      color: yellow;
+            
+    }
+    80% {
+      color: #f83016;
+           
+    }
+
+    100% {
+      
+      color: #2cad12;
+    }
   }
