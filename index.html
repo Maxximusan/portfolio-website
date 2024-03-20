@@ -13,17 +13,17 @@
     <header class=" bg-bgrHead">
         <nav class="p-5">
             <div class="flex justify-around items-center">
-                <a class="text-2xl font-bold" href="./temporarily.html">go to CSS</a>
+                <!-- <a class="text-2xl font-bold" href="./temporarily.html">go to CSS</a> -->
                 
                <div class="min-w-96">
-                 <ul class="flex justify-between" >
-                   <li class=" hover:text-red-200 text-xl">
+                 <ul class="flex min-mob:gap-5 mobile:justify-evenly md:justify-between" >
+                   <li class=" hover:text-red-200 text-base mob:text-xl">
                      <a href="#about" data-lang3="nv-about">About</a>
                    </li>
-                   <li class=" hover:text-red-200 text-xl">
+                   <li class=" hover:text-red-200 text-base mob:text-xl">
                      <a href="#portfolio" data-lang2="nv-portfolio">Portfolio</a>
                    </li>
-                   <li class=" hover:text-red-200 text-xl">
+                   <li class=" hover:text-red-200 text-base mob:text-xl">
                      <a href="#contacts" data-lang="nv-contacts">Contacts</a>
                    </li>
                  </ul>
@@ -45,13 +45,15 @@
                 <h1 class="text-h1 text-5xl text-center font-bold" data-lang="h1"> Maksym Chuikov </h1>
                 <!-- <p class="text-center"> Hi there! I'm a Maksim Chuikov, front end developer based on Kharkov. I'm looking for my first job.</p> -->
                 <div class="p-5 bg-bgrImg inline-block absolute left-28 top-16 border-2 border-solid border-border">
+                    
                   <img src="./images/IMG_8180.jpg" alt="My photo" width="300px"/>
+                    
                 </div>
             </div>
         
         </section>
 
-        <section id="about" class="bg-bgrAbout py-5 px-5">
+        <section id="about" class="bg-bgrAbout py-5 px-20">
             <h2 class="text-center text-4xl font-mons text-h2 mb-5 font-bold" data-lang3="nv-about"> about </h2>
             <div class="text-center mb-10">
             <h3 class="mb-4 font-bold" data-lang="about-title"> Hi there! I'm a Maksim Chuikov, front end developer based on Kharkov. I'm looking for my first job.</h3>
@@ -82,15 +84,15 @@
             <div class="mb-8">
                 <h3 class="font-bold text-2xl text-center mb-3" data-lang="team-projects"> Team projects</h3>
                 
-             <ul class="flex justify-between">
-                 <li class="bg-bgrProjItem max-w-400 hover:shadow-forProjects focus:shadow-forProjects">
+             <ul class="flex  gap-5 flex-col tabl2:flex-row tabl2:justify-between">
+                 <li class="bg-bgrProjItem max-w-72 self-center hover:shadow-forProjects focus:shadow-forProjects mob:max-w-400 tabl2:self-auto tablet2:max-w-288 min-desk:max-w-336 desktop:max-w-400">
                     <h4 class="text-center text-xl text-h4 pt-2.5 pb-5 font-bold" data-lang="ice-cream-title">Ice-cream</h4>
                     <div class="flex justify-evenly mb-1.5">
-                         <a class="text-gitLink animate-changeLPColor" data-lang4="livePageLink" href="https://iamdorohin.github.io/project-22-IceCream/"> LIVE PAGE</a>
-                         <a class="text-gitLink animate-changeGitColor" data-lang5="GithubLink" href="https://github.com/IamDorohin/project-22-IceCream"> GITHUB</a>
+                         <a class="text-gitLink text-lg animate-changeLPColor" data-lang4="livePageLink" href="https://iamdorohin.github.io/project-22-IceCream/"> LIVE PAGE</a>
+                         <a class="text-gitLink text-lg animate-changeGitColor" data-lang5="GithubLink" href="https://github.com/IamDorohin/project-22-IceCream"> GITHUB</a>
                     </div>
                     <div class="flex justify-center">
-                        <img src="./images/ice-cream.png" alt="one of the team projects" width="360px"/>
+                        <img class="mob:w-90 tablet2:w-64 min-desk:w-75 desktop:w-90"  src="./images/ice-cream.png" alt="one of the team projects" width="250px"/>
                     </div>
                     <p class="py-2.5 px-5" data-lang="ice-cream-description"> 
                         Educational group project after html\css course. The ice-cream company's website, with an order form, product
@@ -98,14 +100,14 @@
                         I created a section products, and animation for it.
                     </p>
                 </li>
-                 <li class="bg-bgrProjItem max-w-400 hover:shadow-forProjects focus:shadow-forProjects">
+                 <li class="bg-bgrProjItem max-w-72 self-center hover:shadow-forProjects focus:shadow-forProjects mob:max-w-400 tabl2:self-auto tablet2:max-w-288 min-desk:max-w-336 desktop:max-w-400">
                     <h4 class="text-center text-xl text-h4 pt-2.5 pb-5 font-bold" data-lang="filmoteka-title">Filmoteca</h4>
                     <div class="flex justify-evenly mb-1.5">
-                          <a class="text-gitLink animate-changeLPColor" data-lang4="livePageLink" href="https://trant755.github.io/Filmoteka/"> LIVE PAGE</a>
-                         <a class="text-gitLink animate-changeGitColor" data-lang5="GithubLink" href="https://github.com/trant755/Filmoteka"> GITHUB</a>
+                          <a class="text-gitLink text-lg animate-changeLPColor" data-lang4="livePageLink" href="https://trant755.github.io/Filmoteka/"> LIVE PAGE</a>
+                         <a class="text-gitLink text-lg animate-changeGitColor" data-lang5="GithubLink" href="https://github.com/trant755/Filmoteka"> GITHUB</a>
                     </div>
                     <div class="flex justify-center">
-                        <img src="./images/filmoteka.png" alt="one of the team projects" width="360px"/>
+                        <img class="mob:w-90 tablet2:w-64 min-desk:w-75 desktop:w-90" src="./images/filmoteka.png" alt="one of the team projects" width="250px"/>
                     </div>
                     <p class="py-2.5 px-5" data-lang="filmoteka-description">
                         Educational group project after javascript course. A film search site with the ability to read information about the
@@ -113,14 +115,14 @@
                         I created functionality for obtaining movie data from the API, drawing their cards and drawing in a modal window. 
                     </p>
                 </li>
-                 <li class="bg-bgrProjItem max-w-400 hover:shadow-forProjects focus:shadow-forProjects">
+                 <li class="bg-bgrProjItem max-w-72 self-center hover:shadow-forProjects focus:shadow-forProjects mob:max-w-400 tabl2:self-auto tablet2:max-w-288 min-desk:max-w-336 desktop:max-w-400">
                     <h4 class="text-center text-xl text-h4 pt-2.5 pb-5 font-bold" data-lang="petly-service-title" >Petly Services</h4>
                     <div class="flex justify-evenly mb-1.5">
-                       <a class="text-gitLink animate-changeLPColor" data-lang4="livePageLink" href="https://iamdorohin.github.io/petly-service/">LIVE PAGE</a>
-                       <a class="text-gitLink animate-changeGitColor" data-lang5="GithubLink" href="https://github.com/IamDorohin/petly-service">GITHUB</a>
+                       <a class="text-gitLink text-lg animate-changeLPColor" data-lang4="livePageLink" href="https://iamdorohin.github.io/petly-service/">LIVE PAGE</a>
+                       <a class="text-gitLink text-lg animate-changeGitColor" data-lang5="GithubLink" href="https://github.com/IamDorohin/petly-service">GITHUB</a>
                    </div>
                    <div class="flex justify-center">
-                      <img src="./images/petly.png" alt="one of the team projects" width="360px"/>
+                      <img class="mob:w-90 tablet2:w-64 min-desk:w-75 desktop:w-90" src="./images/petly.png" alt="one of the team projects" width="250px"/>
                    </div>
                     <p class="py-2.5 px-5" data-lang="petly-services-description">
                         Educational group project after react\node course. The application of the service of announcements for the
@@ -135,9 +137,9 @@
             <div class="mb-8">
                 <h3 class="font-bold text-2xl text-center mb-3" data-lang="individual-projects"> Individual projects</h3>
                 
-             <ul class="flex flex-wrap gap-5 justify-between">
+             <ul class="flex gap-5 flex-wrap mobile:justify-center  tablet:justify-evenly tabl2:flex-row  tabl2:justify-between">
                 
-                 <li class="bg-bgrProjItem2 max-w-400 hover:shadow-forProjects focus:shadow-forProjects p-2.5">
+                 <li class="bg-bgrProjItem2 max-w-72  hover:shadow-forProjects focus:shadow-forProjects p-2.5 tablet:max-w-336 tablet2:max-w-288 min-desk:max-w-336 desktop:max-w-400">
                     <h4 class="text-center text-xl text-h4 mb-5 font-bold" data-lang="phonebook-title" >Phonebook</h4>
                     <div class="flex flex-wrap justify-center gap-2.5">
                       <a class="text-gitLink animate-changeLPColor" data-lang4="livePageLink" href="https://maxximusan.github.io/goit-react-hw-08-phonebook/">LIVE PAGE</a>
@@ -145,7 +147,7 @@
                       <a class="text-gitLink animate-changeGitColor" data-lang5="GithubLink" href="https://github.com/Maxximusan/goit-react-hw-08-phonebook">GITHUB</a>
                     </div>
                 </li>
-                 <li class="bg-bgrProjItem2 max-w-400 hover:shadow-forProjects focus:shadow-forProjects p-2.5">
+                 <li class="bg-bgrProjItem2 max-w-72  hover:shadow-forProjects focus:shadow-forProjects p-2.5 tablet:max-w-336 tablet2:max-w-288 min-desk:max-w-336 desktop:max-w-400">
                     <h4 class="text-center text-xl text-h4 mb-5 font-bold" data-lang="search-movies-title" >Search movies</h4>
                     <div class="flex flex-wrap justify-center gap-2.5">
                       <a class="text-gitLink animate-changeLPColor" data-lang4="livePageLink" href="https://maxximusan.github.io/goit-react-hw-05-movies/">LIVE PAGE</a>
@@ -153,7 +155,7 @@
                       <a class="text-gitLink animate-changeGitColor" data-lang5="GithubLink" href="https://github.com/Maxximusan/goit-react-hw-05-movies">GITHUB</a>
                     </div>
                 </li>
-                <li class="bg-bgrProjItem2 max-w-400 hover:shadow-forProjects focus:shadow-forProjects p-2.5">
+                <li class="bg-bgrProjItem2 max-w-72  hover:shadow-forProjects focus:shadow-forProjects p-2.5 tablet:max-w-336 tablet2:max-w-288 min-desk:max-w-336 desktop:max-w-400">
                     <h4 class="text-center text-xl text-h4 mb-5 font-bold" data-lang="web-stuidio-title" >Web-stuidio</h4>
                     <div class="flex flex-wrap justify-center gap-2.5">
                          <a class="text-gitLink animate-changeLPColor" data-lang4="livePageLink" href="https://maxximusan.github.io/homework-8/">LIVE PAGE</a>
@@ -161,14 +163,14 @@
                           <a class="text-gitLink animate-changeGitColor" data-lang5="GithubLink" href="https://github.com/Maxximusan/homework-8">GITHUB</a>
                     </div>
                 </li>
-                  <li class="bg-bgrProjItem2 max-w-400 hover:shadow-forProjects focus:shadow-forProjects p-2.5">
+                  <li class="bg-bgrProjItem2 max-w-72  hover:shadow-forProjects focus:shadow-forProjects p-2.5 tablet:max-w-336 tablet2:max-w-288 min-desk:max-w-336 desktop:max-w-400">
                     <h4 class="text-center text-xl text-h4 mb-5 font-bold" data-lang="rn-project-tittle" >React Native Project</h4>
                     <div class="flex flex-wrap justify-center gap-2.5">
                        <p data-lang="rn-proj-description">Educational project as part of the react-native additional course. Details, and how open this app - you can see at the link below in «readmy». </p>
-                       <a class="text-gitLink animate-changeGitColor" data-lang5="GithubLink" href="https://github.com/Maxximusan/React-Native-project">GITHUB</a>
+                       <a class="text-gitLink text-lg animate-changeGitColor" data-lang5="GithubLink" href="https://github.com/Maxximusan/React-Native-project">GITHUB</a>
                     </div>
                 </li>
-                  <li class="bg-bgrProjItem2 max-w-400 hover:shadow-forProjects focus:shadow-forProjects p-2.5">
+                  <li class="bg-bgrProjItem2 max-w-72  hover:shadow-forProjects focus:shadow-forProjects p-2.5 tablet:max-w-336 tablet2:max-w-288 min-desk:max-w-336 desktop:max-w-400">
                     <h4 class="text-center text-xl text-h4 mb-5 font-bold" data-lang="find-your-favorite-cats" >Find your favorite cats</h4>
                    
                        <p class="mb-2.5" data-lang="cats-description"> At this project i repeated some had learned moments earlier, tryed to figure out in new libraries and other things. It hasn't ended yet. Later will be backend here too.</p>
@@ -178,7 +180,7 @@
                        </div>
                     
                 </li>
-                <li class="bg-bgrProjItem2 max-w-400 hover:shadow-forProjects focus:shadow-forProjects p-2.5">
+                <li class="bg-bgrProjItem2 max-w-72  hover:shadow-forProjects focus:shadow-forProjects p-2.5 tablet:max-w-336 tablet2:max-w-288 min-desk:max-w-336 desktop:max-w-400">
                     <h4 class="text-center text-xl text-h4 mb-5 font-bold" data-lang="rock-stars-singers" >Rock stars singers</h4>
                     
                          <p class="mb-2.5" data-lang="singers-description" >The test task, and at current version uses type script. Details you can see at the link below in «readmy» </p>
@@ -193,7 +195,7 @@
         </section>
 
         <div >
-            <button class="button-to-top" id="btn-to-top">
+            <button class="button-to-top " id="btn-to-top">
             <svg class="to-top-icon" width="40" height="40" id="to-top-icon">
                 <use href="./images/symbol-defs.svg#icon-arrow-up2"></use>
             </svg>
@@ -206,41 +208,41 @@
 
     <footer id="contacts" class="bg-bgrContacts pt-10 pb-20 px-5">
         <h2 class="text-center text-4xl font-mons text-h2 mb-10 font-bold" data-lang="my-contacts-title"> My contacts</h2>
-        <ul class="flex justify-around">
+        <ul class="flex flex-col gap-5 tabl:flex-row tablet:justify-around tabl2:justify-between ">
             <li>
                 <a href="https://t.me/maxximusan">
-                    <div class="flex items-center gap-2.5">
-                         <svg class="fill-telegram" width="40" height="40">
+                    <div class="flex flex-col items-center tabl:flex-row tabl:gap-2.5">
+                         <svg class="fill-telegram tablet:w-7" width="40" height="40">
                               <use href="./images/symbol-defs.svg#icon-telegram"></use>
                          </svg>
-                          <p class="text-2xl" data-lang="telega"> Telegram </p>
+                          <p class="text-xl mobile:text-2xl tabl2:text-2xl" data-lang="telega"> Telegram </p>
                    </div> 
                 </a>
             </li>
             <li>
                 <a href="https://www.linkedin.com/in/maxximusan/">
-                    <div class="flex items-center gap-2.5">
-                         <svg class="fill-h4" width="40" height="40">
+                    <div class="flex flex-col items-center tabl:flex-row tabl:gap-2.5">
+                         <svg class="fill-h4 tablet:w-7" width="40" height="40">
                              <use href="./images/symbol-defs.svg#icon-linkedin"></use>
                           </svg>
-                          <p class="text-2xl" data-lang="linkdin"> Linkidin </p>
+                          <p class="text-xl mobile:text-2xl  tabl2:text-2xl" data-lang="linkdin"> Linkidin </p>
                      </div>
                 </a>
             </li>
             <li>
-                <div class="flex items-center gap-2.5">
-                    <svg width="40" height="40">
+                <div class="flex flex-col items-center tabl:flex-row tabl:gap-2.5">
+                    <svg class="tablet:w-7" width="40" height="40">
                         <use href="./images/symbol-defs.svg#icon-phone"> +38 097-628-30-31</use>
                     </svg>
-                    <p class="text-xl"> +38 097-628-30-31 </p>
+                    <p class="text-base mobile:text-xl  tabl2:text-xl"> +38 097-628-30-31 </p>
                 </div>
             </li>
             <li>
-                <div class="flex items-center gap-2.5">
-                    <svg width="40" height="40">
+                <div class="flex flex-col items-center tabl:flex-row tabl:gap-2.5">
+                    <svg class="tablet:w-7" width="40" height="40">
                         <use href="./images/symbol-defs.svg#icon-gmail"></use>
                     </svg>
-                     <p class="text-xl">maksym.chuikov.ne@gmail.com</p>
+                     <p class="text-base mobile:text-xl tabl2:text-xl">maksym.chuikov.ne@gmail.com</p>
                </div>
             </li>
 

@@ -613,16 +613,40 @@ video {
   max-height: 800px;
 }
 
+.w-400 {
+  width: 25rem;
+}
+
+.w-90 {
+  width: 360px;
+}
+
 .min-w-96 {
   min-width: 24rem;
+}
+
+.max-w-screen-2xl {
+  max-width: 1536px;
 }
 
 .max-w-400 {
   max-width: 25rem;
 }
 
-.max-w-screen-2xl {
-  max-width: 1536px;
+.max-w-60 {
+  max-width: 15rem;
+}
+
+.max-w-90 {
+  max-width: 360px;
+}
+
+.max-w-64 {
+  max-width: 16rem;
+}
+
+.max-w-72 {
+  max-width: 18rem;
 }
 
 .grow {
@@ -749,6 +773,10 @@ video {
   cursor: help;
 }
 
+.flex-col {
+  flex-direction: column;
+}
+
 .flex-wrap {
   flex-wrap: wrap;
 }
@@ -783,6 +811,10 @@ video {
 
 .gap-5 {
   gap: 1.25rem;
+}
+
+.self-center {
+  align-self: center;
 }
 
 .border-2 {
@@ -890,6 +922,11 @@ video {
   padding: 1.25rem;
 }
 
+.px-20 {
+  padding-left: 5rem;
+  padding-right: 5rem;
+}
+
 .px-5 {
   padding-left: 1.25rem;
   padding-right: 1.25rem;
@@ -961,8 +998,18 @@ video {
   line-height: 1;
 }
 
+.text-base {
+  font-size: 1rem;
+  line-height: 1.5rem;
+}
+
 .text-xl {
   font-size: 1.25rem;
+  line-height: 1.75rem;
+}
+
+.text-lg {
+  font-size: 1.125rem;
   line-height: 1.75rem;
 }
 
@@ -1011,7 +1058,7 @@ video {
   width: 2.5rem;
   align-items: center;
   justify-content: center;
-  border-radius: 1.5rem;
+  border-radius: 9999px;
   --tw-bg-opacity: 1;
   background-color: rgb(34 139 34 / var(--tw-bg-opacity));
   transition-property: visibility , opacity;
@@ -1025,6 +1072,23 @@ video {
   transition-property: all;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   transition-duration: 300ms;
+}
+
+@media (min-width: 768px) and (max-width: 949px) {
+  .button-to-top {
+    right: 1rem;
+    bottom: 8rem;
+    height: 4rem;
+    width: 4rem;
+  }
+}
+
+@media (min-width: 1280px) {
+  .button-to-top {
+    bottom: 7rem;
+    height: 4rem;
+    width: 4rem;
+  }
 }
 
 .to-top-icon {
@@ -1051,4 +1115,145 @@ video {
   --tw-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
   --tw-shadow-colored: 0px 1px 1px var(--tw-shadow-color), 0px 4px 4px var(--tw-shadow-color), 1px 4px 6px var(--tw-shadow-color);
   box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+}
+
+@media (min-width: 768px) {
+  .md\:justify-between {
+    justify-content: space-between;
+  }
+}
+
+@media (min-width: 320px) and (max-width: 479px) {
+  .min-mob\:gap-5 {
+    gap: 1.25rem;
+  }
+}
+
+@media (min-width: 480px) {
+  .mob\:w-90 {
+    width: 360px;
+  }
+
+  .mob\:max-w-400 {
+    max-width: 25rem;
+  }
+
+  .mob\:text-xl {
+    font-size: 1.25rem;
+    line-height: 1.75rem;
+  }
+}
+
+@media (min-width: 480px) and (max-width: 767px) {
+  .mobile\:justify-center {
+    justify-content: center;
+  }
+
+  .mobile\:justify-evenly {
+    justify-content: space-evenly;
+  }
+
+  .mobile\:text-2xl {
+    font-size: 1.5rem;
+    line-height: 2rem;
+  }
+
+  .mobile\:text-xl {
+    font-size: 1.25rem;
+    line-height: 1.75rem;
+  }
+}
+
+@media (min-width: 768px) {
+  .tabl\:flex-row {
+    flex-direction: row;
+  }
+
+  .tabl\:flex-wrap {
+    flex-wrap: wrap;
+  }
+
+  .tabl\:gap-2 {
+    gap: 0.5rem;
+  }
+
+  .tabl\:gap-2\.5 {
+    gap: 0.625rem;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 949px) {
+  .tablet\:w-7 {
+    width: 1.75rem;
+  }
+
+  .tablet\:max-w-336 {
+    max-width: 21rem;
+  }
+
+  .tablet\:justify-around {
+    justify-content: space-around;
+  }
+
+  .tablet\:justify-evenly {
+    justify-content: space-evenly;
+  }
+}
+
+@media (min-width: 950px) {
+  .tabl2\:flex-row {
+    flex-direction: row;
+  }
+
+  .tabl2\:flex-wrap {
+    flex-wrap: wrap;
+  }
+
+  .tabl2\:justify-between {
+    justify-content: space-between;
+  }
+
+  .tabl2\:self-auto {
+    align-self: auto;
+  }
+
+  .tabl2\:text-2xl {
+    font-size: 1.5rem;
+    line-height: 2rem;
+  }
+
+  .tabl2\:text-xl {
+    font-size: 1.25rem;
+    line-height: 1.75rem;
+  }
+}
+
+@media (min-width: 950px) and (max-width: 1099px) {
+  .tablet2\:w-64 {
+    width: 16rem;
+  }
+
+  .tablet2\:max-w-288 {
+    max-width: 18rem;
+  }
+}
+
+@media (min-width: 1100px) and (max-width: 1279px) {
+  .min-desk\:w-75 {
+    width: 300px;
+  }
+
+  .min-desk\:max-w-336 {
+    max-width: 21rem;
+  }
+}
+
+@media (min-width: 1280px) {
+  .desktop\:w-90 {
+    width: 360px;
+  }
+
+  .desktop\:max-w-400 {
+    max-width: 25rem;
+  }
 }

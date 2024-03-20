@@ -34,6 +34,10 @@ module.exports = {
       },
 
       spacing: {
+        '75': '300px',
+        '90': '360px',
+        '288': '18rem',
+        '336': '21rem',
         '400': '25rem',
       },
 
@@ -136,6 +140,18 @@ module.exports = {
         changeGitColor: 'changeColorGit 10000ms 1000ms infinite',
         changeLPColor: 'changeColorLP 10000ms 1000ms infinite',
       },
+
+      screens: {
+        'min-mob': {'min': '320px', 'max': '479px'},
+        'mob': '480px',
+        'mobile': {'min': '480px', 'max': '767px'},
+        'tabl': '768px',
+        'tablet': {'min': '768px', 'max': '949px'},
+        'tabl2': '950px',
+        'tablet2': {'min': '950px', 'max': '1099px'},
+        'min-desk': {'min': '1100px', 'max': '1279px'},
+        'desktop': '1280px',
+      }
       
     },
   },
