@@ -12,7 +12,7 @@
   }
 
   .button-to-top {
-    @apply flex justify-center items-center fixed z-50 bg-h2 rounded-full w-10 h-10 right-[5px] bottom-[147px] invisible transition-visibility duration-300 ease-in-out hover:transition-all hover:duration-300 hover:bg-h1 tablet:w-16 tablet:h-16 tablet:right-4 tablet:bottom-32 desktop:w-16 desktop:h-16 desktop:bottom-28;
+    @apply flex justify-center items-center fixed z-50 bg-h2 rounded-full w-10 h-10 right-[5px] bottom-[147px] invisible transition-visibility duration-300 ease-in-out hover:transition-all hover:duration-300 hover:bg-h1 tabl2:w-16 tabl2:h-16 tablet:right-4 tablet:bottom-32  desktop:bottom-28;
   }
 
   .to-top-icon {

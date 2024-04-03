@@ -8,7 +8,7 @@ module.exports = {
 
       backgroundImage: {
         'hero-pattern': "linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),url('/images/1590125748_05-laptop-for-coding.jpg')",
-        
+        'hero-pattern2': "linear-gradient(to right, rgba(47, 48, 58, 0.61), rgba(47, 48, 58, 0.61)),url('/images/javascript.jpg')",
       },
 
       colors:{
@@ -151,6 +151,10 @@ module.exports = {
         'tablet2': {'min': '950px', 'max': '1099px'},
         'min-desk': {'min': '1100px', 'max': '1279px'},
         'desktop': '1280px',
+      },
+
+      minHeight: {
+        'test': 'calc(120px + 100vh)',
       }
       
     },
