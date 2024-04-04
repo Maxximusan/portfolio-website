@@ -41,14 +41,14 @@ export const langArray = {
         'ua': 'Всім привіт! Я Максим Чуйков, фронтенд розробник із Харкова. Я шукаю свою першу працю.',
     },
     'about-experiance' : {
-        'ru': 'В прошлом году я закончил курсы фул-стек. Имею опыт реализации индивидуальных и командных проектов, с которыми вы можете ознакомиться в разделе ниже. Сейчас я продолжаю учиться самостоятельно и также прогрессирую в английском языке.',
-        'en': 'Last year i have ended full-stack courses. I have experience in realization individual and team projects, that you can see in section below. Now i keep studying on my own, and progresinng in english too. ',
-        'ua': 'Минулого року я закінчив курси фул-стеку. Маю досвід реалізації індивідуальних та командних проектів, з якими ви можете ознайомитись у розділі нижче. Зараз я продовжую вчитися самостійно та також прогресую в англійській мові.',
+        'ru': 'В прошлом году я закончил курсы фул-стек:',
+        'en': 'Last year i have ended full-stack courses:',
+        'ua': 'Минулого року я закінчив курси фул-стеку: ',
     },
     'about-looking' : {
-        'ru': 'Я готов работать, получать необходимую практику и опыт, чтобы стать настоящим профессионалом. Ищу надежную компанию, ценящую своих сотрудников в любых жизненных обстоятельствах, готовую вырастить своих звезд для долгосрочного сотрудничества. Если вы такая компанию и я буду с вами, то вы получите надежного человека.',
-        'en': 'I am ready to work, get the necessary practice and experience to become a true professional. I am looking for a reliable company that values its employees in any life circumstances, ready to grow its stars for long-term cooperation. If you are such a company and I to be with you, then you will get a reliable person.',
-        'ua': 'Я готовий працювати, отримувати необхідну практику та досвід, щоб стати справжнім професіоналом. Шукаю надійну компанію, яка цінує своїх співробітників за будь-яких життєвих обставин, готову виростити своїх зірок для довгострокового співробітництва. Якщо ви така компанія і я буду з вами, то ви отримаєте надійну людину.',
+        'ru': 'Имею опыт реализации индивидуальных и командных проектов, с которыми вы можете ознакомиться в разделе ниже. Сейчас я продолжаю учиться самостоятельно и также прогрессирую в английском языке.',
+        'en': ' I have experience in realization individual and team projects, that you can see in section below. Now i keep studying on my own, and progresing in english too. ',
+        'ua': 'Маю досвід реалізації індивідуальних та командних проектів, з якими ви можете ознайомитись у розділі нижче. Зараз я продовжую вчитися самостійно та також прогресую в англійській мові.',
     },
 
 
@@ -142,7 +142,7 @@ export const langArray = {
     'rn-proj-description' : {
         'ru': 'Учебный проект в рамках дополнительного курса React-native. Подробности, и как открыть это приложение - вы можете посмотреть по ссылке ниже в «readmy»',
         'en': 'Educational project as part of the react-native additional course. Details, and how open this app - you can see at the link below in «readmy».',
-        'ua': 'Навчальний проект у рамках додаткового курсу React-Native. Подробиці, і як відкрити цей додаток - ви можете подивитися за посиланням нижче в readmy',
+        'ua': 'Навчальний проект у рамках додаткового курсу React-Native. Подробиці, і як відкрити цей додаток - ви можете подивитися за посиланням нижче в «readmy»',
     },
     'find-your-favorite-cats' : {
         'ru': 'Найди своего любимого котэ',
