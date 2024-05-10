@@ -8,6 +8,8 @@ const allPossibleLangueges = ["ru", "en", "ua"]
 console.log(location);
 console.log(window.location);
 
+
+
 select.addEventListener('change', changeURLLanguege);
 
 // перенаправить на url с указанием языка
@@ -29,6 +31,8 @@ function changeLanguage (){
 
     }
     select.value = hash;
+    // localStorage.setItem('language', hash)
+    // const hash2 = localStorage.getItem('language')
     changeLanguageEverywhere(hash)
     
 }

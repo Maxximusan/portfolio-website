@@ -7,9 +7,9 @@ export const langArray = {
     },
 
   'title' : {
-    'ru': 'Временно',
-    'en': 'Temporality',
-    'ua': 'Тимчасово',
+    'ru': 'Мой сайт-портфолио',
+    'en': 'My portfolio website',
+    'ua': 'Мiй сайт-портфолiо',
   },
     'nv-about' : {
         'ru': 'Обо мне',
