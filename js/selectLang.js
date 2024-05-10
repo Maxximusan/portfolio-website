@@ -13,7 +13,7 @@ select.addEventListener('change', changeURLLanguege);
 // перенаправить на url с указанием языка
 function changeURLLanguege(){
 let lang = select.value
-location.href = window.location.pathname + '#'+lang;
+location.href = window.location.pathname + '#' +lang;
 location.reload()
 }
 
@@ -21,10 +21,12 @@ function changeLanguage (){
     let hash = window.location.hash
     hash = hash.substring(1)
     console.log(hash);
+   
 
     if(!allPossibleLangueges.includes(hash)){
-        location.href = window.location.pathname + "#en";
+        location.href = window.location.pathname + '#en';
         location.reload();
+
     }
     select.value = hash;
     changeLanguageEverywhere(hash)
@@ -69,15 +71,11 @@ for (let key of keys){
 
 }
 
-
-
-
 // + Вариант3 - многоиспользуемые по дата атрибутам
 document.querySelectorAll('[data-lang2]').forEach((elem) => elem.innerHTML = langArray['nv-portfolio'][hash])
 document.querySelectorAll('[data-lang3]').forEach((elem) => elem.innerHTML = langArray['nv-about'][hash])
 document.querySelectorAll('[data-lang4]').forEach((elem) => elem.innerHTML = langArray['livePageLink'][hash])
 document.querySelectorAll('[data-lang5]').forEach((elem) => elem.innerHTML = langArray['GithubLink'][hash])
-
 
 // вариант№3.1 - многоиспользуемым по классам для одинаковых
 // document.querySelectorAll('.live-page-link').forEach((elem) => elem.innerHTML = langArray['livePageLink'][hash])
