@@ -1,5 +1,8 @@
 import {langArray} from './lang.js'
 
+const primaryLang = document.querySelector('html')
+// console.log(primaryLang.lang);
+// console.log(navigator.language);
 
 const select = document.querySelector('select');
 
@@ -11,32 +14,46 @@ console.log(window.location);
 
 
 select.addEventListener('change', changeURLLanguege);
+document.addEventListener("DOMContentLoaded", refreshPage); //при перезагрузке страницы
+
+function refreshPage(){
+    location.href = window.location.pathname + '#' +primaryLang.lang
+}
 
 // перенаправить на url с указанием языка
 function changeURLLanguege(){
+    
 let lang = select.value
 location.href = window.location.pathname + '#' +lang;
-location.reload()
+
+// location.reload()
+
+changeLanguage()
+
 }
 
+
 function changeLanguage (){
+    
     let hash = window.location.hash
     hash = hash.substring(1)
     console.log(hash);
+   console.log(location.href);
    
 
     if(!allPossibleLangueges.includes(hash)){
         location.href = window.location.pathname + '#en';
+        
         location.reload();
-
     }
     select.value = hash;
+   
     // localStorage.setItem('language', hash)
     // const hash2 = localStorage.getItem('language')
     changeLanguageEverywhere(hash)
     
 }
-changeLanguage()
+// changeLanguage()
 
 
 function changeLanguageEverywhere(hash){
