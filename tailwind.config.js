@@ -7,8 +7,8 @@ module.exports = {
     extend: {
 
       backgroundImage: {
-        'hero-pattern': "linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),url('./images/1590125748_05-laptop-for-coding.jpg')",
-        'hero-pattern2': "linear-gradient(to right, rgba(47, 48, 58, 0.61), rgba(47, 48, 58, 0.61)),url('./images/javascript.jpg')",
+        'hero-pattern': "linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),url('../images/1590125748_05-laptop-for-coding.jpg')",
+        'hero-pattern2': "linear-gradient(to right, rgba(47, 48, 58, 0.61), rgba(47, 48, 58, 0.61)),url('../images/javascript.jpg')",
       },
 
       colors:{

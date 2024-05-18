@@ -851,7 +851,7 @@ video {
 }
 
 .bg-hero-pattern2 {
-  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.61), rgba(47, 48, 58, 0.61)),url('./images/javascript.jpg');
+  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.61), rgba(47, 48, 58, 0.61)),url('../images/javascript.jpg');
 }
 
 .bg-cover {
@@ -1198,7 +1198,7 @@ video {
   }
 
   .tabl2\:bg-hero-pattern {
-    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),url('./images/1590125748_05-laptop-for-coding.jpg');
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),url('../images/1590125748_05-laptop-for-coding.jpg');
   }
 
   .tabl2\:bg-right {
