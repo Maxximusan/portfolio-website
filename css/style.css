@@ -621,10 +621,6 @@ video {
   max-width: 1536px;
 }
 
-.grow {
-  flex-grow: 1;
-}
-
 @keyframes changeColorGit {
   0% {
     color: #2cad12;
@@ -855,7 +851,7 @@ video {
 }
 
 .bg-hero-pattern2 {
-  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.61), rgba(47, 48, 58, 0.61)),url('/images/javascript.jpg');
+  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.61), rgba(47, 48, 58, 0.61)),url('./images/javascript.jpg');
 }
 
 .bg-cover {
@@ -1140,16 +1136,8 @@ video {
 }
 
 @media (min-width: 768px) {
-  .tabl\:flex {
-    display: flex;
-  }
-
   .tabl\:flex-row {
     flex-direction: row;
-  }
-
-  .tabl\:flex-col {
-    flex-direction: column;
   }
 
   .tabl\:gap-2 {
@@ -1210,7 +1198,7 @@ video {
   }
 
   .tabl2\:bg-hero-pattern {
-    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),url('/images/1590125748_05-laptop-for-coding.jpg');
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),url('./images/1590125748_05-laptop-for-coding.jpg');
   }
 
   .tabl2\:bg-right {
