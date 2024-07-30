@@ -11,8 +11,6 @@ const allPossibleLangueges = ["ru", "en", "ua"]
 console.log(location);
 console.log(window.location);
 
-
-
 select.addEventListener('change', changeURLLanguege);
 document.addEventListener("DOMContentLoaded", refreshPage); //при перезагрузке страницы
 

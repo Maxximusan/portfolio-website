@@ -605,6 +605,10 @@ video {
   display: flex;
 }
 
+.h-screen {
+  height: 100vh;
+}
+
 .min-h-\[770px\] {
   min-height: 770px;
 }

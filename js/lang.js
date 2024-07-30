@@ -37,7 +37,7 @@ export const langArray = {
 
     'about-title' : {
         'ru': 'Всем привет! Я Максим Чуйков, фронтенд разработчик из Харькова. Я ищу свою первую работу.',
-        'en': 'Hi there! I am a Maksim Chuikov, front end developer based on Kharkov. I am looking for my first job.',
+        'en': 'Hi there! I\'m a Maksim Chuikov, front end developer based on Kharkov. I am looking for my first job.',
         'ua': 'Всім привіт! Я Максим Чуйков, фронтенд розробник із Харкова. Я шукаю свою першу працю.',
     },
     'about-experiance' : {
@@ -86,7 +86,7 @@ export const langArray = {
     },
     'ice-cream-description' : {
         'ru': 'Учебный групповой проект после курса html/css. Сайт компании по производству мороженого с формой заказа, подробной информацией о продукции и картой точек продаж. Сайт с адаптивной версткой. Я создал раздел "товары" и анимацию для этого раздела.',
-        'en': 'Educational group project after html/css course. The ice-cream company website, with an order form, product details and a map of sales outlets. The website with a responsive layout. I created a section products, and animation for it.',
+        'en': `Educational group project after html/css course. The ice-cream company's website, with an order form, product details and a map of sales outlets. The website with a responsive layout. I created a section products, and animation for it.`,
         'ua': 'Навчальний груповий проект після курсу html/css. Сайт компанії з виробництва морозива з формою замовлення, детальною інформацією про продукцію та карту точок продажу. Сайт із адаптивною версткою. Я створив розділ "товари" та анімацію для цього розділу',
     },
     'filmoteka-description' : {
