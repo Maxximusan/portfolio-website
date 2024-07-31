@@ -613,6 +613,10 @@ video {
   height: 100dvh;
 }
 
+.h-lvh {
+  height: 100lvh;
+}
+
 .max-h-screen {
   max-height: 100vh;
 }
