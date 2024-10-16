@@ -605,27 +605,6 @@ video {
   display: flex;
 }
 
-.h-screen {
-  height: 100vh;
-}
-
-.h-dvh {
-  height: 100dvh;
-}
-
-.h-lvh {
-  height: 100lvh;
-}
-
-.h-fit {
-  height: -moz-fit-content;
-  height: fit-content;
-}
-
-.max-h-screen {
-  max-height: 100vh;
-}
-
 .min-h-\[770px\] {
   min-height: 770px;
 }
